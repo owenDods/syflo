@@ -1,0 +1,11 @@
+@mixin starMove($duration: 50s) {
+	animation: starMove $duration linear infinite;
+}
+
+@mixin transitionOpacity() {
+	transition: opacity 0.3s ease-in-out;
+}
+
+@mixin transitionAll($duration: 0.3s) {
+	transition: all $duration ease-in-out;
+}
