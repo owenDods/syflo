@@ -1,0 +1,1618 @@
+[
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.004234 ",
+        "chanceOfDyingBeforeNextBirthday": "0.004225 ",
+        "survivorsOutOfAHundredThousand": "100000.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "422.5",
+        "yearsLeft": "79.17"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.003521 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003515 ",
+        "survivorsOutOfAHundredThousand": "100000.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "351.5",
+        "yearsLeft": "82.86"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000306 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000306 ",
+        "survivorsOutOfAHundredThousand": "99577.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "30.5",
+        "yearsLeft": "78.51"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000246 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000246 ",
+        "survivorsOutOfAHundredThousand": "99648.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "24.5",
+        "yearsLeft": "82.15"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000163 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000163 ",
+        "survivorsOutOfAHundredThousand": "99547.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "16.2",
+        "yearsLeft": "77.53"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000137 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000137 ",
+        "survivorsOutOfAHundredThousand": "99624.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "13.6",
+        "yearsLeft": "81.17"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000127 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000127 ",
+        "survivorsOutOfAHundredThousand": "99530.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "12.6",
+        "yearsLeft": "76.54"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000105 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000105 ",
+        "survivorsOutOfAHundredThousand": "99610.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "10.4",
+        "yearsLeft": "80.18"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000090 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000090 ",
+        "survivorsOutOfAHundredThousand": "99518.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "8.9",
+        "yearsLeft": "75.55"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000081 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000081 ",
+        "survivorsOutOfAHundredThousand": "99599.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "8.1",
+        "yearsLeft": "79.19"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000092 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000092 ",
+        "survivorsOutOfAHundredThousand": "99509.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "9.2",
+        "yearsLeft": "74.56"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000067 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000067 ",
+        "survivorsOutOfAHundredThousand": "99591.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.7",
+        "yearsLeft": "78.20"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000091 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000091 ",
+        "survivorsOutOfAHundredThousand": "99500.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "9.0",
+        "yearsLeft": "73.57"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000074 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000074 ",
+        "survivorsOutOfAHundredThousand": "99585.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "7.3",
+        "yearsLeft": "77.20"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000085 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000085 ",
+        "survivorsOutOfAHundredThousand": "99491.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "8.5",
+        "yearsLeft": "72.57"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000074 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000074 ",
+        "survivorsOutOfAHundredThousand": "99577.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "7.4",
+        "yearsLeft": "76.21"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000066 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000066 ",
+        "survivorsOutOfAHundredThousand": "99482.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.5",
+        "yearsLeft": "71.58"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000060 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000060 ",
+        "survivorsOutOfAHundredThousand": "99570.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.0",
+        "yearsLeft": "75.21"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000085 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000085 ",
+        "survivorsOutOfAHundredThousand": "99476.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "8.5",
+        "yearsLeft": "70.58"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000069 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000069 ",
+        "survivorsOutOfAHundredThousand": "99564.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.8",
+        "yearsLeft": "74.22"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000094 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000094 ",
+        "survivorsOutOfAHundredThousand": "99467.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "9.4",
+        "yearsLeft": "69.59"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000059 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000059 ",
+        "survivorsOutOfAHundredThousand": "99557.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "5.9",
+        "yearsLeft": "73.22"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000100 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000100 ",
+        "survivorsOutOfAHundredThousand": "99458.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "9.9",
+        "yearsLeft": "68.60"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000061 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000061 ",
+        "survivorsOutOfAHundredThousand": "99551.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.1",
+        "yearsLeft": "72.23"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000095 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000095 ",
+        "survivorsOutOfAHundredThousand": "99448.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "9.5",
+        "yearsLeft": "67.60"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000060 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000060 ",
+        "survivorsOutOfAHundredThousand": "99545.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "6.0",
+        "yearsLeft": "71.23"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000101 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000101 ",
+        "survivorsOutOfAHundredThousand": "99438.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "10.0",
+        "yearsLeft": "66.61"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000106 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000106 ",
+        "survivorsOutOfAHundredThousand": "99539.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "10.6",
+        "yearsLeft": "70.24"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000125 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000125 ",
+        "survivorsOutOfAHundredThousand": "99428.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "12.4",
+        "yearsLeft": "65.62"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000112 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000112 ",
+        "survivorsOutOfAHundredThousand": "99529.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "11.1",
+        "yearsLeft": "69.24"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000158 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000158 ",
+        "survivorsOutOfAHundredThousand": "99416.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "15.7",
+        "yearsLeft": "64.62"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000138 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000138 ",
+        "survivorsOutOfAHundredThousand": "99517.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "13.7",
+        "yearsLeft": "68.25"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000213 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000213 ",
+        "survivorsOutOfAHundredThousand": "99400.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "21.2",
+        "yearsLeft": "63.63"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000161 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000161 ",
+        "survivorsOutOfAHundredThousand": "99504.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "16.0",
+        "yearsLeft": "67.26"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000296 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000296 ",
+        "survivorsOutOfAHundredThousand": "99379.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "29.4",
+        "yearsLeft": "62.65"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000154 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000154 ",
+        "survivorsOutOfAHundredThousand": "99488.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "15.3",
+        "yearsLeft": "66.27"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000414 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000414 ",
+        "survivorsOutOfAHundredThousand": "99350.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "41.1",
+        "yearsLeft": "61.67"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000209 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000209 ",
+        "survivorsOutOfAHundredThousand": "99472.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "20.7",
+        "yearsLeft": "65.28"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000453 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000453 ",
+        "survivorsOutOfAHundredThousand": "99308.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "44.9",
+        "yearsLeft": "60.69"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000209 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000209 ",
+        "survivorsOutOfAHundredThousand": "99452.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "20.8",
+        "yearsLeft": "64.30"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000472 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000472 ",
+        "survivorsOutOfAHundredThousand": "99264.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "46.9",
+        "yearsLeft": "59.72"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000205 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000205 ",
+        "survivorsOutOfAHundredThousand": "99431.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "20.4",
+        "yearsLeft": "63.31"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000508 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000508 ",
+        "survivorsOutOfAHundredThousand": "99217.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "50.4",
+        "yearsLeft": "58.75"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000220 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000220 ",
+        "survivorsOutOfAHundredThousand": "99410.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "21.9",
+        "yearsLeft": "62.32"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000499 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000499 ",
+        "survivorsOutOfAHundredThousand": "99166.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "49.5",
+        "yearsLeft": "57.78"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000219 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000219 ",
+        "survivorsOutOfAHundredThousand": "99389.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "21.7",
+        "yearsLeft": "61.34"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000556 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000556 ",
+        "survivorsOutOfAHundredThousand": "99117.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "55.1",
+        "yearsLeft": "56.80"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000232 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000232 ",
+        "survivorsOutOfAHundredThousand": "99367.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "23.1",
+        "yearsLeft": "60.35"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000549 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000548 ",
+        "survivorsOutOfAHundredThousand": "99062.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "54.3",
+        "yearsLeft": "55.84"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000231 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000231 ",
+        "survivorsOutOfAHundredThousand": "99344.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "22.9",
+        "yearsLeft": "59.36"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000586 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000586 ",
+        "survivorsOutOfAHundredThousand": "99007.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "58.0",
+        "yearsLeft": "54.87"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000249 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000249 ",
+        "survivorsOutOfAHundredThousand": "99321.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "24.7",
+        "yearsLeft": "58.38"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000627 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000627 ",
+        "survivorsOutOfAHundredThousand": "98949.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "62.0",
+        "yearsLeft": "53.90"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000273 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000273 ",
+        "survivorsOutOfAHundredThousand": "99296.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "27.2",
+        "yearsLeft": "57.39"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000631 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000630 ",
+        "survivorsOutOfAHundredThousand": "98887.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "62.3",
+        "yearsLeft": "52.93"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000271 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000271 ",
+        "survivorsOutOfAHundredThousand": "99269.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "26.9",
+        "yearsLeft": "56.41"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000667 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000667 ",
+        "survivorsOutOfAHundredThousand": "98825.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "65.9",
+        "yearsLeft": "51.96"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000327 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000327 ",
+        "survivorsOutOfAHundredThousand": "99242.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "32.5",
+        "yearsLeft": "55.42"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000698 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000698 ",
+        "survivorsOutOfAHundredThousand": "98759.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "68.9",
+        "yearsLeft": "51.00"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000351 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000351 ",
+        "survivorsOutOfAHundredThousand": "99210.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "34.8",
+        "yearsLeft": "54.44"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000743 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000742 ",
+        "survivorsOutOfAHundredThousand": "98690.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "73.3",
+        "yearsLeft": "50.03"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000385 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000385 ",
+        "survivorsOutOfAHundredThousand": "99175.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "38.1",
+        "yearsLeft": "53.46"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000764 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000763 ",
+        "survivorsOutOfAHundredThousand": "98617.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "75.3",
+        "yearsLeft": "49.07"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000412 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000412 ",
+        "survivorsOutOfAHundredThousand": "99137.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "40.9",
+        "yearsLeft": "52.48"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000900 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000900 ",
+        "survivorsOutOfAHundredThousand": "98542.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "88.7",
+        "yearsLeft": "48.11"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000468 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000467 ",
+        "survivorsOutOfAHundredThousand": "99096.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "46.3",
+        "yearsLeft": "51.50"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000886 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000885 ",
+        "survivorsOutOfAHundredThousand": "98453.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "87.2",
+        "yearsLeft": "47.15"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000492 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000492 ",
+        "survivorsOutOfAHundredThousand": "99049.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "48.7",
+        "yearsLeft": "50.52"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.000969 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000969 ",
+        "survivorsOutOfAHundredThousand": "98366.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "95.3",
+        "yearsLeft": "46.19"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000531 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000531 ",
+        "survivorsOutOfAHundredThousand": "99001.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "52.6",
+        "yearsLeft": "49.55"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001027 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001026 ",
+        "survivorsOutOfAHundredThousand": "98270.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "100.8",
+        "yearsLeft": "45.24"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000589 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000589 ",
+        "survivorsOutOfAHundredThousand": "98948.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "58.2",
+        "yearsLeft": "48.57"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001096 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001096 ",
+        "survivorsOutOfAHundredThousand": "98170.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "107.6",
+        "yearsLeft": "44.28"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000655 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000655 ",
+        "survivorsOutOfAHundredThousand": "98890.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "64.8",
+        "yearsLeft": "47.60"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001145 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001144 ",
+        "survivorsOutOfAHundredThousand": "98062.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "112.2",
+        "yearsLeft": "43.33"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000680 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000679 ",
+        "survivorsOutOfAHundredThousand": "98825.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "67.1",
+        "yearsLeft": "46.63"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001325 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001324 ",
+        "survivorsOutOfAHundredThousand": "97950.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "129.7",
+        "yearsLeft": "42.38"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000758 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000758 ",
+        "survivorsOutOfAHundredThousand": "98758.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "74.8",
+        "yearsLeft": "45.67"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001371 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001370 ",
+        "survivorsOutOfAHundredThousand": "97820.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "134.1",
+        "yearsLeft": "41.44"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000812 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000812 ",
+        "survivorsOutOfAHundredThousand": "98683.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "80.1",
+        "yearsLeft": "44.70"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001564 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001562 ",
+        "survivorsOutOfAHundredThousand": "97686.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "152.6",
+        "yearsLeft": "40.49"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000943 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000943 ",
+        "survivorsOutOfAHundredThousand": "98603.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "93.0",
+        "yearsLeft": "43.74"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001690 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001689 ",
+        "survivorsOutOfAHundredThousand": "97533.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "164.7",
+        "yearsLeft": "39.55"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.000969 ",
+        "chanceOfDyingBeforeNextBirthday": "0.000969 ",
+        "survivorsOutOfAHundredThousand": "98510.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "95.5",
+        "yearsLeft": "42.78"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001747 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001746 ",
+        "survivorsOutOfAHundredThousand": "97369.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "170.0",
+        "yearsLeft": "38.62"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001090 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001089 ",
+        "survivorsOutOfAHundredThousand": "98415.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "107.2",
+        "yearsLeft": "41.82"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.001919 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001917 ",
+        "survivorsOutOfAHundredThousand": "97199.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "186.3",
+        "yearsLeft": "37.69"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001162 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001162 ",
+        "survivorsOutOfAHundredThousand": "98308.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "114.2",
+        "yearsLeft": "40.86"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.002137 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002134 ",
+        "survivorsOutOfAHundredThousand": "97012.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "207.1",
+        "yearsLeft": "36.76"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001287 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001286 ",
+        "survivorsOutOfAHundredThousand": "98193.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "126.3",
+        "yearsLeft": "39.91"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.002219 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002217 ",
+        "survivorsOutOfAHundredThousand": "96805.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "214.6",
+        "yearsLeft": "35.84"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001465 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001464 ",
+        "survivorsOutOfAHundredThousand": "98067.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "143.5",
+        "yearsLeft": "38.96"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.002390 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002387 ",
+        "survivorsOutOfAHundredThousand": "96591.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "230.5",
+        "yearsLeft": "34.91"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001535 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001534 ",
+        "survivorsOutOfAHundredThousand": "97923.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "150.2",
+        "yearsLeft": "38.02"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.002659 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002656 ",
+        "survivorsOutOfAHundredThousand": "96360.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "255.9",
+        "yearsLeft": "34.00"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001634 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001633 ",
+        "survivorsOutOfAHundredThousand": "97773.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "159.7",
+        "yearsLeft": "37.07"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.002740 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002736 ",
+        "survivorsOutOfAHundredThousand": "96104.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "262.9",
+        "yearsLeft": "33.09"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001771 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001769 ",
+        "survivorsOutOfAHundredThousand": "97614.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "172.7",
+        "yearsLeft": "36.13"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.003024 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003020 ",
+        "survivorsOutOfAHundredThousand": "95841.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "289.4",
+        "yearsLeft": "32.18"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.001876 ",
+        "chanceOfDyingBeforeNextBirthday": "0.001874 ",
+        "survivorsOutOfAHundredThousand": "97441.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "182.6",
+        "yearsLeft": "35.20"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.003352 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003346 ",
+        "survivorsOutOfAHundredThousand": "95552.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "319.7",
+        "yearsLeft": "31.27"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.002143 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002141 ",
+        "survivorsOutOfAHundredThousand": "97258.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "208.2",
+        "yearsLeft": "34.26"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.003484 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003478 ",
+        "survivorsOutOfAHundredThousand": "95232.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "331.2",
+        "yearsLeft": "30.37"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.002349 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002347 ",
+        "survivorsOutOfAHundredThousand": "97050.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "227.7",
+        "yearsLeft": "33.33"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.003735 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003728 ",
+        "survivorsOutOfAHundredThousand": "94901.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "353.8",
+        "yearsLeft": "29.48"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.002540 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002537 ",
+        "survivorsOutOfAHundredThousand": "96822.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "245.6",
+        "yearsLeft": "32.41"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.004005 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003997 ",
+        "survivorsOutOfAHundredThousand": "94547.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "377.9",
+        "yearsLeft": "28.59"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.002788 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002784 ",
+        "survivorsOutOfAHundredThousand": "96577.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "268.9",
+        "yearsLeft": "31.49"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.004414 ",
+        "chanceOfDyingBeforeNextBirthday": "0.004404 ",
+        "survivorsOutOfAHundredThousand": "94169.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "414.8",
+        "yearsLeft": "27.70"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.003002 ",
+        "chanceOfDyingBeforeNextBirthday": "0.002998 ",
+        "survivorsOutOfAHundredThousand": "96308.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "288.7",
+        "yearsLeft": "30.58"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.004995 ",
+        "chanceOfDyingBeforeNextBirthday": "0.004983 ",
+        "survivorsOutOfAHundredThousand": "93755.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "467.2",
+        "yearsLeft": "26.82"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.003355 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003349 ",
+        "survivorsOutOfAHundredThousand": "96019.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "321.6",
+        "yearsLeft": "29.67"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.005383 ",
+        "chanceOfDyingBeforeNextBirthday": "0.005369 ",
+        "survivorsOutOfAHundredThousand": "93287.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "500.8",
+        "yearsLeft": "25.95"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.003632 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003625 ",
+        "survivorsOutOfAHundredThousand": "95698.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "346.9",
+        "yearsLeft": "28.77"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.005858 ",
+        "chanceOfDyingBeforeNextBirthday": "0.005841 ",
+        "survivorsOutOfAHundredThousand": "92787.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "541.9",
+        "yearsLeft": "25.09"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.003990 ",
+        "chanceOfDyingBeforeNextBirthday": "0.003982 ",
+        "survivorsOutOfAHundredThousand": "95351.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "379.7",
+        "yearsLeft": "27.87"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.006488 ",
+        "chanceOfDyingBeforeNextBirthday": "0.006467 ",
+        "survivorsOutOfAHundredThousand": "92245.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "596.5",
+        "yearsLeft": "24.23"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.004252 ",
+        "chanceOfDyingBeforeNextBirthday": "0.004243 ",
+        "survivorsOutOfAHundredThousand": "94971.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "403.0",
+        "yearsLeft": "26.98"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.007163 ",
+        "chanceOfDyingBeforeNextBirthday": "0.007138 ",
+        "survivorsOutOfAHundredThousand": "91648.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "654.2",
+        "yearsLeft": "23.39"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.004810 ",
+        "chanceOfDyingBeforeNextBirthday": "0.004798 ",
+        "survivorsOutOfAHundredThousand": "94568.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "453.7",
+        "yearsLeft": "26.09"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.008005 ",
+        "chanceOfDyingBeforeNextBirthday": "0.007973 ",
+        "survivorsOutOfAHundredThousand": "90994.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "725.5",
+        "yearsLeft": "22.55"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.005272 ",
+        "chanceOfDyingBeforeNextBirthday": "0.005258 ",
+        "survivorsOutOfAHundredThousand": "94114.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "494.9",
+        "yearsLeft": "25.22"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.008743 ",
+        "chanceOfDyingBeforeNextBirthday": "0.008705 ",
+        "survivorsOutOfAHundredThousand": "90269.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "785.8",
+        "yearsLeft": "21.73"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.005669 ",
+        "chanceOfDyingBeforeNextBirthday": "0.005653 ",
+        "survivorsOutOfAHundredThousand": "93619.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "529.2",
+        "yearsLeft": "24.35"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.009480 ",
+        "chanceOfDyingBeforeNextBirthday": "0.009435 ",
+        "survivorsOutOfAHundredThousand": "89483.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "844.3",
+        "yearsLeft": "20.92"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.006315 ",
+        "chanceOfDyingBeforeNextBirthday": "0.006295 ",
+        "survivorsOutOfAHundredThousand": "93090.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "586.0",
+        "yearsLeft": "23.48"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.010563 ",
+        "chanceOfDyingBeforeNextBirthday": "0.010508 ",
+        "survivorsOutOfAHundredThousand": "88638.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "931.4",
+        "yearsLeft": "20.11"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.006821 ",
+        "chanceOfDyingBeforeNextBirthday": "0.006798 ",
+        "survivorsOutOfAHundredThousand": "92504.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "628.9",
+        "yearsLeft": "22.63"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.011523 ",
+        "chanceOfDyingBeforeNextBirthday": "0.011457 ",
+        "survivorsOutOfAHundredThousand": "87707.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1004.9",
+        "yearsLeft": "19.32"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.007383 ",
+        "chanceOfDyingBeforeNextBirthday": "0.007356 ",
+        "survivorsOutOfAHundredThousand": "91875.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "675.8",
+        "yearsLeft": "21.78"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.012418 ",
+        "chanceOfDyingBeforeNextBirthday": "0.012341 ",
+        "survivorsOutOfAHundredThousand": "86702.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1070.0",
+        "yearsLeft": "18.54"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.007932 ",
+        "chanceOfDyingBeforeNextBirthday": "0.007901 ",
+        "survivorsOutOfAHundredThousand": "91199.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "720.5",
+        "yearsLeft": "20.94"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.013365 ",
+        "chanceOfDyingBeforeNextBirthday": "0.013277 ",
+        "survivorsOutOfAHundredThousand": "85632.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1136.9",
+        "yearsLeft": "17.76"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.008772 ",
+        "chanceOfDyingBeforeNextBirthday": "0.008734 ",
+        "survivorsOutOfAHundredThousand": "90479.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "790.2",
+        "yearsLeft": "20.10"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.014402 ",
+        "chanceOfDyingBeforeNextBirthday": "0.014299 ",
+        "survivorsOutOfAHundredThousand": "84495.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1208.2",
+        "yearsLeft": "16.99"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.009407 ",
+        "chanceOfDyingBeforeNextBirthday": "0.009363 ",
+        "survivorsOutOfAHundredThousand": "89689.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "839.7",
+        "yearsLeft": "19.27"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.015849 ",
+        "chanceOfDyingBeforeNextBirthday": "0.015724 ",
+        "survivorsOutOfAHundredThousand": "83287.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1309.7",
+        "yearsLeft": "16.23"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.010574 ",
+        "chanceOfDyingBeforeNextBirthday": "0.010519 ",
+        "survivorsOutOfAHundredThousand": "88849.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "934.6",
+        "yearsLeft": "18.45"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.017636 ",
+        "chanceOfDyingBeforeNextBirthday": "0.017481 ",
+        "survivorsOutOfAHundredThousand": "81977.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1433.1",
+        "yearsLeft": "15.49"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.011580 ",
+        "chanceOfDyingBeforeNextBirthday": "0.011513 ",
+        "survivorsOutOfAHundredThousand": "87914.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1012.2",
+        "yearsLeft": "17.64"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.019534 ",
+        "chanceOfDyingBeforeNextBirthday": "0.019345 ",
+        "survivorsOutOfAHundredThousand": "80544.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1558.2",
+        "yearsLeft": "14.75"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.013094 ",
+        "chanceOfDyingBeforeNextBirthday": "0.013008 ",
+        "survivorsOutOfAHundredThousand": "86902.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1130.5",
+        "yearsLeft": "16.84"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.021786 ",
+        "chanceOfDyingBeforeNextBirthday": "0.021551 ",
+        "survivorsOutOfAHundredThousand": "78986.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1702.2",
+        "yearsLeft": "14.03"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.014518 ",
+        "chanceOfDyingBeforeNextBirthday": "0.014413 ",
+        "survivorsOutOfAHundredThousand": "85772.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1236.3",
+        "yearsLeft": "16.06"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.024146 ",
+        "chanceOfDyingBeforeNextBirthday": "0.023858 ",
+        "survivorsOutOfAHundredThousand": "77284.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1843.8",
+        "yearsLeft": "13.33"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.016174 ",
+        "chanceOfDyingBeforeNextBirthday": "0.016044 ",
+        "survivorsOutOfAHundredThousand": "84535.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1356.3",
+        "yearsLeft": "15.28"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.026669 ",
+        "chanceOfDyingBeforeNextBirthday": "0.026318 ",
+        "survivorsOutOfAHundredThousand": "75440.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1985.5",
+        "yearsLeft": "12.65"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.018226 ",
+        "chanceOfDyingBeforeNextBirthday": "0.018061 ",
+        "survivorsOutOfAHundredThousand": "83179.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1502.3",
+        "yearsLeft": "14.52"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.030434 ",
+        "chanceOfDyingBeforeNextBirthday": "0.029978 ",
+        "survivorsOutOfAHundredThousand": "73455.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2202.1",
+        "yearsLeft": "11.97"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.020130 ",
+        "chanceOfDyingBeforeNextBirthday": "0.019930 ",
+        "survivorsOutOfAHundredThousand": "81677.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1627.8",
+        "yearsLeft": "13.78"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.033535 ",
+        "chanceOfDyingBeforeNextBirthday": "0.032982 ",
+        "survivorsOutOfAHundredThousand": "71253.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2350.1",
+        "yearsLeft": "11.33"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.022491 ",
+        "chanceOfDyingBeforeNextBirthday": "0.022241 ",
+        "survivorsOutOfAHundredThousand": "80049.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1780.4",
+        "yearsLeft": "13.05"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.036620 ",
+        "chanceOfDyingBeforeNextBirthday": "0.035962 ",
+        "survivorsOutOfAHundredThousand": "68903.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2477.9",
+        "yearsLeft": "10.70"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.025465 ",
+        "chanceOfDyingBeforeNextBirthday": "0.025145 ",
+        "survivorsOutOfAHundredThousand": "78268.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1968.0",
+        "yearsLeft": "12.34"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.040718 ",
+        "chanceOfDyingBeforeNextBirthday": "0.039906 ",
+        "survivorsOutOfAHundredThousand": "66425.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2650.8",
+        "yearsLeft": "10.08"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.027964 ",
+        "chanceOfDyingBeforeNextBirthday": "0.027579 ",
+        "survivorsOutOfAHundredThousand": "76300.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2104.3",
+        "yearsLeft": "11.64"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.045248 ",
+        "chanceOfDyingBeforeNextBirthday": "0.044247 ",
+        "survivorsOutOfAHundredThousand": "63774.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2821.8",
+        "yearsLeft": "9.48"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.031363 ",
+        "chanceOfDyingBeforeNextBirthday": "0.030879 ",
+        "survivorsOutOfAHundredThousand": "74196.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2291.1",
+        "yearsLeft": "10.96"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.050351 ",
+        "chanceOfDyingBeforeNextBirthday": "0.049114 ",
+        "survivorsOutOfAHundredThousand": "60952.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2993.6",
+        "yearsLeft": "8.89"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.035326 ",
+        "chanceOfDyingBeforeNextBirthday": "0.034713 ",
+        "survivorsOutOfAHundredThousand": "71905.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2496.1",
+        "yearsLeft": "10.29"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.057138 ",
+        "chanceOfDyingBeforeNextBirthday": "0.055551 ",
+        "survivorsOutOfAHundredThousand": "57958.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3219.7",
+        "yearsLeft": "8.32"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.040802 ",
+        "chanceOfDyingBeforeNextBirthday": "0.039987 ",
+        "survivorsOutOfAHundredThousand": "69409.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2775.4",
+        "yearsLeft": "9.65"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.063428 ",
+        "chanceOfDyingBeforeNextBirthday": "0.061479 ",
+        "survivorsOutOfAHundredThousand": "54739.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3365.3",
+        "yearsLeft": "7.78"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.045875 ",
+        "chanceOfDyingBeforeNextBirthday": "0.044846 ",
+        "survivorsOutOfAHundredThousand": "66634.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2988.3",
+        "yearsLeft": "9.03"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.072131 ",
+        "chanceOfDyingBeforeNextBirthday": "0.069620 ",
+        "survivorsOutOfAHundredThousand": "51373.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3576.7",
+        "yearsLeft": "7.26"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.052508 ",
+        "chanceOfDyingBeforeNextBirthday": "0.051165 ",
+        "survivorsOutOfAHundredThousand": "63645.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3256.4",
+        "yearsLeft": "8.43"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.081866 ",
+        "chanceOfDyingBeforeNextBirthday": "0.078647 ",
+        "survivorsOutOfAHundredThousand": "47797.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3759.1",
+        "yearsLeft": "6.77"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.060210 ",
+        "chanceOfDyingBeforeNextBirthday": "0.058450 ",
+        "survivorsOutOfAHundredThousand": "60389.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3529.8",
+        "yearsLeft": "7.85"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.091641 ",
+        "chanceOfDyingBeforeNextBirthday": "0.087626 ",
+        "survivorsOutOfAHundredThousand": "44038.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3858.9",
+        "yearsLeft": "6.30"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.068667 ",
+        "chanceOfDyingBeforeNextBirthday": "0.066387 ",
+        "survivorsOutOfAHundredThousand": "56859.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3774.8",
+        "yearsLeft": "7.31"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.103836 ",
+        "chanceOfDyingBeforeNextBirthday": "0.098711 ",
+        "survivorsOutOfAHundredThousand": "40179.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3966.2",
+        "yearsLeft": "5.86"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.077555 ",
+        "chanceOfDyingBeforeNextBirthday": "0.074660 ",
+        "survivorsOutOfAHundredThousand": "53084.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3963.3",
+        "yearsLeft": "6.79"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.115705 ",
+        "chanceOfDyingBeforeNextBirthday": "0.109377 ",
+        "survivorsOutOfAHundredThousand": "36213.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3960.9",
+        "yearsLeft": "5.45"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.088787 ",
+        "chanceOfDyingBeforeNextBirthday": "0.085013 ",
+        "survivorsOutOfAHundredThousand": "49121.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4175.9",
+        "yearsLeft": "6.30"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.130200 ",
+        "chanceOfDyingBeforeNextBirthday": "0.122242 ",
+        "survivorsOutOfAHundredThousand": "32252.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3942.6",
+        "yearsLeft": "5.06"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.101213 ",
+        "chanceOfDyingBeforeNextBirthday": "0.096337 ",
+        "survivorsOutOfAHundredThousand": "44945.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4329.9",
+        "yearsLeft": "5.84"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.147528 ",
+        "chanceOfDyingBeforeNextBirthday": "0.137393 ",
+        "survivorsOutOfAHundredThousand": "28309.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3889.5",
+        "yearsLeft": "4.69"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.114430 ",
+        "chanceOfDyingBeforeNextBirthday": "0.108237 ",
+        "survivorsOutOfAHundredThousand": "40615.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4396.1",
+        "yearsLeft": "5.41"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.163145 ",
+        "chanceOfDyingBeforeNextBirthday": "0.150840 ",
+        "survivorsOutOfAHundredThousand": "24420.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3683.5",
+        "yearsLeft": "4.36"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.130420 ",
+        "chanceOfDyingBeforeNextBirthday": "0.122436 ",
+        "survivorsOutOfAHundredThousand": "36219.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4434.6",
+        "yearsLeft": "5.01"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.183289 ",
+        "chanceOfDyingBeforeNextBirthday": "0.167902 ",
+        "survivorsOutOfAHundredThousand": "20736.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3481.7",
+        "yearsLeft": "4.04"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.148635 ",
+        "chanceOfDyingBeforeNextBirthday": "0.138353 ",
+        "survivorsOutOfAHundredThousand": "31784.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4397.5",
+        "yearsLeft": "4.64"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.200370 ",
+        "chanceOfDyingBeforeNextBirthday": "0.182124 ",
+        "survivorsOutOfAHundredThousand": "17254.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3142.5",
+        "yearsLeft": "3.76"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.163695 ",
+        "chanceOfDyingBeforeNextBirthday": "0.151311 ",
+        "survivorsOutOfAHundredThousand": "27387.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "4144.0",
+        "yearsLeft": "4.30"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.222813 ",
+        "chanceOfDyingBeforeNextBirthday": "0.200479 ",
+        "survivorsOutOfAHundredThousand": "14112.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2829.2",
+        "yearsLeft": "3.48"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.183918 ",
+        "chanceOfDyingBeforeNextBirthday": "0.168430 ",
+        "survivorsOutOfAHundredThousand": "23243.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3914.9",
+        "yearsLeft": "3.98"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.249339 ",
+        "chanceOfDyingBeforeNextBirthday": "0.221700 ",
+        "survivorsOutOfAHundredThousand": "11283.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2501.5",
+        "yearsLeft": "3.23"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.204108 ",
+        "chanceOfDyingBeforeNextBirthday": "0.185206 ",
+        "survivorsOutOfAHundredThousand": "19328.5",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3579.8",
+        "yearsLeft": "3.68"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.278319 ",
+        "chanceOfDyingBeforeNextBirthday": "0.244320 ",
+        "survivorsOutOfAHundredThousand": "8781.6",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2145.5",
+        "yearsLeft": "3.01"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.233708 ",
+        "chanceOfDyingBeforeNextBirthday": "0.209256 ",
+        "survivorsOutOfAHundredThousand": "15748.7",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "3295.5",
+        "yearsLeft": "3.41"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.302173 ",
+        "chanceOfDyingBeforeNextBirthday": "0.262511 ",
+        "survivorsOutOfAHundredThousand": "6636.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1742.1",
+        "yearsLeft": "2.82"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.255562 ",
+        "chanceOfDyingBeforeNextBirthday": "0.226606 ",
+        "survivorsOutOfAHundredThousand": "12453.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2822.0",
+        "yearsLeft": "3.17"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.329315 ",
+        "chanceOfDyingBeforeNextBirthday": "0.282757 ",
+        "survivorsOutOfAHundredThousand": "4894.1",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1383.8",
+        "yearsLeft": "2.64"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.279396 ",
+        "chanceOfDyingBeforeNextBirthday": "0.245149 ",
+        "survivorsOutOfAHundredThousand": "9631.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "2361.1",
+        "yearsLeft": "2.96"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.344012 ",
+        "chanceOfDyingBeforeNextBirthday": "0.293524 ",
+        "survivorsOutOfAHundredThousand": "3510.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1030.3",
+        "yearsLeft": "2.49"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.300215 ",
+        "chanceOfDyingBeforeNextBirthday": "0.261032 ",
+        "survivorsOutOfAHundredThousand": "7270.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1897.7",
+        "yearsLeft": "2.76"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.388481 ",
+        "chanceOfDyingBeforeNextBirthday": "0.325296 ",
+        "survivorsOutOfAHundredThousand": "2479.9",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "806.7",
+        "yearsLeft": "2.31"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.334203 ",
+        "chanceOfDyingBeforeNextBirthday": "0.286353 ",
+        "survivorsOutOfAHundredThousand": "5372.4",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1538.4",
+        "yearsLeft": "2.55"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.414017 ",
+        "chanceOfDyingBeforeNextBirthday": "0.343011 ",
+        "survivorsOutOfAHundredThousand": "1673.2",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "573.9",
+        "yearsLeft": "2.19"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.370395 ",
+        "chanceOfDyingBeforeNextBirthday": "0.312518 ",
+        "survivorsOutOfAHundredThousand": "3834.0",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "1198.2",
+        "yearsLeft": "2.38"
+    }
+  },
+  {
+    "male": {
+        "mortalityAsFractionOfPopulation": "0.457723 ",
+        "chanceOfDyingBeforeNextBirthday": "0.372477 ",
+        "survivorsOutOfAHundredThousand": "1099.3",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "409.5",
+        "yearsLeft": "2.07"
+    },
+    "female": {
+        "mortalityAsFractionOfPopulation": "0.396048 ",
+        "chanceOfDyingBeforeNextBirthday": "0.330584 ",
+        "survivorsOutOfAHundredThousand": "2635.8",
+        "willDieBeforeNextBirthdayOutOfAHundredThousand": "871.4",
+        "yearsLeft": "2.23"
+    }
+  }
+]
