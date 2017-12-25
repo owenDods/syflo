@@ -21,7 +21,7 @@ class App extends Component {
 
 			<div className={styleClass}>
 
-				<Content />
+				<Content titleSplashVisible={titleSplashVisible} />
 
 				<div className={`${className}__stars`} />
 
