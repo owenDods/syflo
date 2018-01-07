@@ -138,8 +138,8 @@ $app-contentGutter: $_gutterL;
 
 		display: flex;
 		width: calc(100% - (2 * #{$app-contentGutter}));
-		height: calc(100% - #{$app-contentGutter});
-		margin: 0 $app-contentGutter $app-contentGutter;
+		height: calc(100% - (2 * #{$app-contentGutter}));
+		margin: $app-contentGutter;
 
 		& > .selection {
 			width: 100%;

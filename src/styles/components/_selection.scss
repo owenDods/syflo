@@ -1,12 +1,16 @@
+$selection-indexHeight: 20px;
+
 .selection {
 
 	color: white;
+	display: flex;
+	flex-direction: column;
 
-	&__choice {
+	&Choice {
 
 		display: flex;
 		flex-direction: column;
-		height: 100%;
+		height: calc(100% - #{$selection-indexHeight});
 
 		& > label {
 
@@ -22,7 +26,7 @@
 
 		}
 
-		&Content {
+		&__content {
 
 			display: flex;
 			height: 80%;
@@ -41,6 +45,10 @@
 					background-color: $_whiteSemiOpaque;
 				}
 
+				&:active {
+					background-color: $_whiteAlmostOpaque;
+				}
+
 				&:last-child {
 					margin: 0;
 				}
@@ -52,6 +60,22 @@
 
 			}
 
+		}
+
+	}
+
+	&Index {
+
+		width: 100%;
+		height: $selection-indexHeight;
+		display: flex;
+
+		& > div {
+			width: $selection-indexHeight;
+			height: $selection-indexHeight;
+			margin: auto;
+			border-radius: 100%;
+			background-color: $_lightBlue;
 		}
 
 	}

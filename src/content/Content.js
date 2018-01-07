@@ -1,7 +1,7 @@
 import React from 'react';
 import { CSSTransitionGroup } from 'react-transition-group';
 
-import Selection from '../selection/Selection';
+import SelectionContainer from '../selection/SelectionContainer';
 
 export const className = 'content';
 
@@ -11,11 +11,15 @@ export default ({ titleSplashVisible }) => {
 		{
 			label: 'What is your sex?',
 			options: [ 'Male', 'Female' ]
+		},
+		{
+			label: 'What is your sex?',
+			options: [ 'Male', 'Female' ]
 		}
 	];
 	const initialSelection = (
 
-		<Selection choices={choices} />
+		<SelectionContainer name="initial" choices={choices} />
 
 	);
 

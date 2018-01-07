@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 
-import app from './AppReducers';
+import app from './AppReducer';
+import selection from '../selection/SelectionReducer';
 
-export default combineReducers({ app });
+export default combineReducers({ app, selection });
