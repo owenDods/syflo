@@ -26,6 +26,7 @@ $app-contentGutter: $_gutterL;
 		position: absolute;
 		z-index: $_zIndex-2;
 		background: transparent;
+		overflow: hidden;
 		@include transitionOpacity();
 
 		&:after {
