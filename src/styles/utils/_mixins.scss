@@ -6,6 +6,6 @@
 	transition: opacity 0.3s ease-in-out;
 }
 
-@mixin transitionAll($duration: 0.3s) {
-	transition: all $duration ease-in-out;
+@mixin transitionAll($duration: 0.3s, $delay: 0s) {
+	transition: all $duration ease-in-out $delay;
 }

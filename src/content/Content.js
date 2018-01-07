@@ -37,7 +37,7 @@ export default ({ titleSplashVisible }) => {
 			<CSSTransitionGroup
 				className={`${className}__body`}
 				transitionName={`${className}__body`}
-				transitionEnterTimeout={300}
+				transitionEnterTimeout={600}
 				transitionLeaveTimeout={300}
 			>
 
