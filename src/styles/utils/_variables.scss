@@ -3,8 +3,19 @@ $_darkGrey: #111111;
 $_darkBlue: #1b2735;
 $_lightBlue: #81cce4;
 
+$_whiteAlmostTransparent: rgba(255, 255, 255, 0.25);
+$_whiteSemiOpaque: rgba(255, 255, 255, 0.5);
+
 $_fontSize: 3vmin;
+$_fontSizeL: 2rem;
+$_fontSizeXl: 3rem;
 $_fontSizeXxl: 4rem;
 
+$_zIndex-2: -2000;
 $_zIndex-1: -1000;
 $_zIndex1: 1000;
+
+$_gutter: 20px;
+$_gutterL: 40px;
+
+$_radius: 10px;
