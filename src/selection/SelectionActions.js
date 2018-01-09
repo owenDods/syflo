@@ -9,7 +9,7 @@ export const selectionUpdateChoiceCount = (name, count) => ({
 });
 
 export const selectionUpdateChoiceIndex = (name, index) => ({
-	type: SELECTION_UPDATE_CHOICE_COUNT,
+	type: SELECTION_UPDATE_CHOICE_INDEX,
 	name,
 	index
 });

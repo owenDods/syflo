@@ -11,6 +11,17 @@ $selection-indexHeight: 20px;
 		display: flex;
 		flex-direction: column;
 		height: calc(100% - #{$selection-indexHeight});
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0.5);
+
+		&--active {
+			position: relative;
+			opacity: 1;
+			transform: scale(1);
+			visibility: visible;
+		}
 
 		& > label {
 

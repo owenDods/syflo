@@ -2,7 +2,7 @@ import React from 'react';
 
 export const className = 'selectionIndex';
 
-export default ({ name, choicesLength = 0, index }) => {
+export default ({ name, optionsLength = 0, index }) => {
 
 	const indexDot = i => {
 
@@ -17,7 +17,7 @@ export default ({ name, choicesLength = 0, index }) => {
 	};
 	const indexContent = [];
 
-	while(indexContent.length < choicesLength) {
+	while(indexContent.length < optionsLength) {
 
 		indexContent.push(indexDot(indexContent.length));
 

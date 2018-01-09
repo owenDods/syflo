@@ -7,15 +7,17 @@ import SelectionIndex from './SelectionIndex';
 
 export const className = 'selection';
 
-export default ({ choices = [], name }) => {
+export default ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex }) => {
 
-	const choicesContent = map(choices, ({ label, options }, i) => (
+	const choicesContent = map(options, ({ label, choices }, i) => (
 
 		<SelectionChoice
 			key={`${className}-${name}-${i}`}
 			label={label}
-			options={options}
+			options={choices}
 			name={name}
+			active={selectionIndex === i}
+			onClick={() => selectionUpdateChoiceIndex(i + 1)}
 		/>
 
 	));
@@ -24,7 +26,7 @@ export default ({ choices = [], name }) => {
 
 		<div className={className}>
 
-			<SelectionIndex name={name} choicesLength={choices.length} />
+			<SelectionIndex name={name} optionsLength={options.length} />
 
 			{choicesContent}
 

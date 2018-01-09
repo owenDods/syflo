@@ -19,7 +19,7 @@ const selectionChoices = (state = initialState, action) => {
 
 		case SELECTION_UPDATE_CHOICE_INDEX:
 
-			return Object.assign(state, {
+			return Object.assign({}, state, {
 				selectionIndex: action.index
 			});
 
@@ -40,9 +40,10 @@ export default (state = {}, action) => {
 	switch (action.type) {
 
 		case SELECTION_UPDATE_CHOICE_COUNT:
+		case SELECTION_UPDATE_CHOICE_INDEX:
 		case SELECTION_UPDATE_CHOICE:
 
-			return Object.assign(state, {
+			return Object.assign({}, state, {
 				[action.name]: selectionChoices(state[action.name], action)
 			});
 

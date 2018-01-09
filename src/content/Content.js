@@ -7,19 +7,19 @@ export const className = 'content';
 
 export default ({ titleSplashVisible }) => {
 
-	const choices = [
+	const options = [
 		{
 			label: 'What is your sex?',
-			options: [ 'Male', 'Female' ]
+			choices: [ 'Male', 'Female' ]
 		},
 		{
-			label: 'What is your sex?',
-			options: [ 'Male', 'Female' ]
+			label: 'What is your sex????',
+			choices: [ 'Bloke', 'Chick' ]
 		}
 	];
 	const initialSelection = (
 
-		<SelectionContainer name="initial" choices={choices} />
+		<SelectionContainer name="initial" options={options} />
 
 	);
 

@@ -3,11 +3,12 @@ import map from 'lodash/map';
 
 export const className = 'selectionChoice';
 
-export default ({ label, options, name }) => {
+export default ({ label, options, name, active, onClick }) => {
 
+	const styleClass = active ? `${className} ${className}--active` : className;
 	const choiceContent = map(options, (option, i) => (
 
-		<div key={`${className}-${name}-${i}`}>
+		<div key={`${className}-${name}-${i}`} onClick={onClick}>
 
 			<span>{option}</span>
 
@@ -17,7 +18,7 @@ export default ({ label, options, name }) => {
 
 	return (
 
-		<div className={className}>
+		<div className={styleClass}>
 
 			<label>
 

@@ -9,12 +9,11 @@ import Selection from './Selection';
 
 const mapStateToProps = (state, ownProps) => {
 
-	const { name, choices } = ownProps;
+	const { name } = ownProps;
 	const { selection = {} } = state;
-	const { selectionChoices, selectionIndex } = selection[name] || {};
+	const { selectionChoices, selectionIndex = 0 } = selection[name] || {};
 
 	return {
-		choices,
 		selectionChoices,
 		selectionIndex
 	};
@@ -27,7 +26,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 	return {
 		selectionUpdateChoiceCount: count => dispatch(selectionUpdateChoiceCount(name, count)),
-		selectionUpdateChoiceIndex: index => dispatch(selectionUpdateChoice(name, index)),
+		selectionUpdateChoiceIndex: index => dispatch(selectionUpdateChoiceIndex(name, index)),
 		selectionUpdateChoice: (index, choice) => dispatch(selectionUpdateChoice(name, index, choice))
 	};
 };
