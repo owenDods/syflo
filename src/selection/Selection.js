@@ -9,18 +9,17 @@ export const className = 'selection';
 
 export default ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex }) => {
 
-	const choicesContent = map(options, ({ label, choices }, i) => (
+	const choicesContent = options.length ? (
 
 		<SelectionChoice
-			key={`${className}-${name}-${i}`}
-			label={label}
-			options={choices}
+			key={`${className}-${name}-${selectionIndex}`}
+			label={options[selectionIndex].label}
+			options={options[selectionIndex].choices}
 			name={name}
-			active={selectionIndex === i}
-			onClick={() => selectionUpdateChoiceIndex(i + 1)}
+			onClick={() => selectionUpdateChoiceIndex(selectionIndex + 1)}
 		/>
 
-	));
+	) : null;
 
 	return (
 
@@ -28,7 +27,16 @@ export default ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex
 
 			<SelectionIndex name={name} optionsLength={options.length} />
 
-			{choicesContent}
+			<CSSTransitionGroup
+				className={`${className}__body`}
+				transitionName={`${className}__body`}
+				transitionEnterTimeout={600}
+				transitionLeaveTimeout={300}
+			>
+
+				{choicesContent}
+
+			</CSSTransitionGroup>
 
 		</div>
 

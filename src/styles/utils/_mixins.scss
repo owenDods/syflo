@@ -9,3 +9,29 @@
 @mixin transitionAll($duration: 0.3s, $delay: 0s) {
 	transition: all $duration ease-in-out $delay;
 }
+
+@mixin enterLeaveClasses() {
+
+	&-enter {
+		@include transitionAll(0.3s, 0.3s);
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+	&-enter-active {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&-leave {
+		@include transitionAll(0.3s, 0s);
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	&-leave-active {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+}
