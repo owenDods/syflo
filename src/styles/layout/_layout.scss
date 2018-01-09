@@ -117,8 +117,8 @@ $app-contentGutter: $_gutterL;
 			margin: auto;
 			font-size: $_fontSizeXxl;
 			text-align: center;
-			letter-spacing: 1em;
-			text-indent: 1em;
+			letter-spacing: 2rem;
+			text-indent: 1rem;
 			@include transitionAll();
 		}
 
