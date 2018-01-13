@@ -82,11 +82,67 @@ $selection-indexHeight: 20px;
 		display: flex;
 
 		& > div {
-			width: $selection-indexHeight;
+
+			width: calc(100% - #{$selection-indexHeight});
 			height: $selection-indexHeight;
-			margin: auto;
-			border-radius: 100%;
-			background-color: $_lightBlue;
+			margin: auto 0;
+			position: relative;
+			padding: 0 $selection-indexHeight;
+
+			& > div {
+				background-color: $_lightBlue;
+				width: 100%;
+				height: 100%;
+			}
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				width: 0;
+				height: 0;
+				border-style: solid;
+			}
+
+			&:before {
+				border-width: 0 0 $selection-indexHeight $selection-indexHeight;
+				border-color: transparent transparent $_lightBlue transparent;
+				left: 0;
+			}
+
+			&:after {
+				border-width: $selection-indexHeight $selection-indexHeight 0 0;
+				border-color: $_lightBlue transparent transparent  transparent;
+				right: 0;
+			}
+
+			&:first-child {
+
+				&:before {
+					width: $selection-indexHeight;
+					height: $selection-indexHeight;
+					background-color: $_lightBlue;
+					border-top-left-radius: 100%;
+					border-bottom-left-radius: 100%;
+					border-width: 0;
+				}
+
+			}
+
+			&:last-child {
+
+				&:after {
+					width: $selection-indexHeight;
+					height: $selection-indexHeight;
+					background-color: $_lightBlue;
+					border-top-right-radius: 100%;
+					border-bottom-right-radius: 100%;
+					border-width: 0;
+				}
+
+			}
+
 		}
 
 	}

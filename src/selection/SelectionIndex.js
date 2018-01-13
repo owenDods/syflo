@@ -11,7 +11,11 @@ const SelectionIndex = ({ name, optionsLength = 0, index }) => {
 
 		return (
 
-			<div key={key} />
+			<div key={key}>
+
+				<div/>
+
+			</div>
 
 		);
 
