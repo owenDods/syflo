@@ -9,7 +9,7 @@ export const className = 'selection';
 
 const Selection = ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex }) => {
 
-	const choicesContent = options.length ? (
+	const choicesContent = options.length && selectionIndex < options.length ? (
 
 		<SelectionChoice
 			key={`${className}-${name}-${selectionIndex}`}
