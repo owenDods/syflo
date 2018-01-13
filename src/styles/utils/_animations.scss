@@ -9,3 +9,19 @@
 	}
 
 }
+
+@keyframes gentlePulse {
+
+	from {
+		opacity: 0.9;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	to {
+		opacity: 0.9;
+	}
+
+}

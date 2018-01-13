@@ -25,7 +25,7 @@ const Selection = ({ options = [], name, selectionIndex, selectionUpdateChoiceIn
 
 		<div className={className}>
 
-			<SelectionIndex name={name} optionsLength={options.length} />
+			<SelectionIndex name={name} optionsLength={options.length} index={selectionIndex} />
 
 			<CSSTransitionGroup
 				className={`${className}__body`}

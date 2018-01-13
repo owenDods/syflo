@@ -8,10 +8,13 @@ const SelectionIndex = ({ name, optionsLength = 0, index }) => {
 	const indexDot = (i) => {
 
 		const key = `${className}-${name}-${i}`;
+		let styleClass = `${className}__dot`;
+		styleClass = index === i ? `${styleClass} ${styleClass}--active` : styleClass;
+		styleClass = i < index ? `${styleClass} ${styleClass}--completed` : styleClass;
 
 		return (
 
-			<div key={key}>
+			<div key={key} className={styleClass}>
 
 				<div/>
 

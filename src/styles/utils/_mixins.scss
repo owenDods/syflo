@@ -2,6 +2,10 @@
 	animation: starMove $duration linear infinite;
 }
 
+@mixin gentlePulse($duration: 3s) {
+	animation: gentlePulse $duration linear infinite;
+}
+
 @mixin transitionOpacity() {
 	transition: opacity 0.3s ease-in-out;
 }
