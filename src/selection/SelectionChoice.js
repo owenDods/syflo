@@ -8,7 +8,7 @@ const SelectionChoice = ({ label, options, name, onClick }) => {
 
 	const choiceContent = map(options, (option, i) => (
 
-		<div key={`${className}-${name}-${i}`} onClick={onClick}>
+		<div key={`${className}-${name}-${i}`} onClick={() => onClick(option)}>
 
 			<span>{option}</span>
 
@@ -42,7 +42,7 @@ SelectionChoice.propTypes = {
 	label: PropTypes.string,
 	options: PropTypes.arrayOf(PropTypes.string),
 	name: PropTypes.string,
-	onClick: PropTypes.func
+	onClick: PropTypes.func.isRequired
 };
 
 export default SelectionChoice;

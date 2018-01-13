@@ -13,9 +13,26 @@ const selectionChoices = (state = initialState, action) => {
 
 	switch (action.type) {
 
-		case SELECTION_UPDATE_CHOICE_COUNT:
+		case SELECTION_UPDATE_CHOICE_COUNT: {
+
+			if (!state.selectionChoices.length) {
+
+				let arrayLength = action.count;
+				const selectionChoices = [];
+
+				while(arrayLength--) {
+
+					selectionChoices.push(null);
+
+				}
+
+				return Object.assign({}, state, { selectionChoices });
+
+			}
 
 			return Object.assign(state);
+
+		}
 
 		case SELECTION_UPDATE_CHOICE_INDEX:
 
