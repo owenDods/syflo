@@ -29,7 +29,7 @@ const selectionChoices = (state = initialState, action) => {
 
 		default:
 
-			return state
+			return state;
 
 	}
 
@@ -49,7 +49,7 @@ export default (state = {}, action) => {
 
 		default:
 
-			return state
+			return state;
 
 	}
 

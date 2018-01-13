@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Content from '../content/Content';
 
@@ -36,5 +37,10 @@ class App extends Component {
 	}
 
 }
+
+App.propTypes = {
+	titleSplashVisible: PropTypes.bool,
+	appTitleSplashToggle: PropTypes.func.isRequired
+};
 
 export default App;

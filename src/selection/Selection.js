@@ -1,13 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
-import map from 'lodash/map';
 
 import SelectionChoice from './SelectionChoice';
 import SelectionIndex from './SelectionIndex';
 
 export const className = 'selection';
 
-export default ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex }) => {
+const Selection = ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex }) => {
 
 	const choicesContent = options.length ? (
 
@@ -42,4 +42,16 @@ export default ({ options = [], name, selectionIndex, selectionUpdateChoiceIndex
 
 	);
 
-}
+};
+
+Selection.propTypes = {
+	options: PropTypes.arrayOf(PropTypes.shape({
+		label: PropTypes.string,
+		choices: PropTypes.arrayOf(PropTypes.string)
+	})),
+	name: PropTypes.string,
+	selectionIndex: PropTypes.number,
+	selectionUpdateChoiceIndex: PropTypes.func
+};
+
+export default Selection;

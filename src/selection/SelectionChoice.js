@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import map from 'lodash/map';
 
 export const className = 'selectionChoice';
 
-export default ({ label, options, name, onClick }) => {
+const SelectionChoice = ({ label, options, name, onClick }) => {
 
 	const choiceContent = map(options, (option, i) => (
 
@@ -35,4 +36,13 @@ export default ({ label, options, name, onClick }) => {
 
 	);
 
-}
+};
+
+SelectionChoice.propTypes = {
+	label: PropTypes.string,
+	options: PropTypes.arrayOf(PropTypes.string),
+	name: PropTypes.string,
+	onClick: PropTypes.func
+};
+
+export default SelectionChoice;

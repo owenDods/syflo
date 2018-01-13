@@ -29,6 +29,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 		selectionUpdateChoiceIndex: index => dispatch(selectionUpdateChoiceIndex(name, index)),
 		selectionUpdateChoice: (index, choice) => dispatch(selectionUpdateChoice(name, index, choice))
 	};
+
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Selection);

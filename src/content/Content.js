@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 import SelectionContainer from '../selection/SelectionContainer';
 
 export const className = 'content';
 
-export default ({ titleSplashVisible }) => {
+const Content = ({ titleSplashVisible }) => {
 
 	const options = [
 		{
@@ -53,4 +54,10 @@ export default ({ titleSplashVisible }) => {
 
 	);
 
-}
+};
+
+Content.propTypes = {
+	titleSplashVisible: PropTypes.bool
+};
+
+export default Content;

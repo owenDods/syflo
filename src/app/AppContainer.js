@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { appTitleSplashToggle } from './AppActions';
 import App from './App';
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
 
 	const { app } = state;
 	const { titleSplashVisible } = app;
