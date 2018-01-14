@@ -42,9 +42,16 @@ const selectionChoices = (state = initialState, action) => {
 				selectionIndex: action.index
 			});
 
-		case SELECTION_UPDATE_CHOICE:
+		case SELECTION_UPDATE_CHOICE: {
 
-			return Object.assign(state);
+			const newSelectionChoices = state.selectionChoices.slice();
+			newSelectionChoices[action.index] = action.choice;
+
+			return Object.assign({}, state, {
+				selectionChoices: newSelectionChoices
+			});
+
+		}
 
 		default:
 

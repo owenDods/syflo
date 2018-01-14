@@ -21,9 +21,11 @@ class Selection extends Component {
 
 		console.log(option);
 
-		const { selectionIndex, selectionUpdateChoiceIndex } = this.props;
+		const { selectionIndex, selectionUpdateChoiceIndex, selectionUpdateChoice } = this.props;
 
 		selectionUpdateChoiceIndex(selectionIndex + 1);
+
+		selectionUpdateChoice(selectionIndex, option);
 
 	}
 
@@ -75,7 +77,8 @@ Selection.propTypes = {
 	name: PropTypes.string,
 	selectionIndex: PropTypes.number,
 	selectionUpdateChoiceIndex: PropTypes.func,
-	selectionUpdateChoiceCount: PropTypes.func.isRequired
+	selectionUpdateChoiceCount: PropTypes.func.isRequired,
+	selectionUpdateChoice: PropTypes.func.isRequired
 };
 
 export default Selection;
