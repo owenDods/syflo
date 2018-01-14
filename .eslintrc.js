@@ -1,4 +1,5 @@
 module.exports = {
+	"parser": "babel-eslint",
 	"extends": "airbnb",
 	"plugins": [
 		"react"
@@ -16,7 +17,8 @@ module.exports = {
 		"object-curly-newline": "off",
 		"jsx-a11y/click-events-have-key-events": "off",
 		"jsx-a11y/no-static-element-interactions": "off",
-		"jsx-a11y/label-has-for": "off"
+		"jsx-a11y/label-has-for": "off",
+		"no-plusplus": "off"
 	},
 	"globals": {
 		"document": true

@@ -16,7 +16,7 @@ const SelectionIndex = ({ name, optionsLength = 0, index }) => {
 
 			<div key={key} className={styleClass}>
 
-				<div/>
+				<div />
 
 			</div>
 

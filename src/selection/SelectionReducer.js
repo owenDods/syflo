@@ -18,15 +18,17 @@ const selectionChoices = (state = initialState, action) => {
 			if (!state.selectionChoices.length) {
 
 				let arrayLength = action.count;
-				const selectionChoices = [];
+				const newSelectionChoices = [];
 
-				while(arrayLength--) {
+				while (arrayLength) {
 
-					selectionChoices.push(null);
+					newSelectionChoices.push(null);
+
+					arrayLength--;
 
 				}
 
-				return Object.assign({}, state, { selectionChoices });
+				return Object.assign({}, state, { selectionChoices: newSelectionChoices });
 
 			}
 

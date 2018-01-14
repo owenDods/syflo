@@ -29,7 +29,7 @@ class Selection extends Component {
 
 	render() {
 
-		const { options = [], name, selectionIndex, selectionUpdateChoiceIndex } = this.props;
+		const { options = [], name, selectionIndex } = this.props;
 		const choicesContent = options.length && selectionIndex < options.length ? (
 
 			<SelectionChoice
@@ -74,7 +74,8 @@ Selection.propTypes = {
 	})),
 	name: PropTypes.string,
 	selectionIndex: PropTypes.number,
-	selectionUpdateChoiceIndex: PropTypes.func
+	selectionUpdateChoiceIndex: PropTypes.func,
+	selectionUpdateChoiceCount: PropTypes.func.isRequired
 };
 
 export default Selection;
