@@ -10,11 +10,17 @@ const Datepicker = () => {
 
 		<div className={className}>
 
-			<TextInput placeholder="DD" />
+			<div className={`${className}__inputs`}>
 
-			<TextInput placeholder="MM" />
+				<TextInput placeholder="DD" maxLength={2} />
 
-			<TextInput placeholder="YYYY" />
+				<TextInput placeholder="MM" maxLength={2} />
+
+				<TextInput placeholder="YYYY" maxLength={4} />
+
+			</div>
+
+			<button type="button">Submit</button>
 
 		</div>
 

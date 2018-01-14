@@ -19,3 +19,26 @@ input {
 	width: 100%;
 	padding: $_gutterS;
 }
+
+button {
+
+	background-color: $_whiteAlmostTransparent;
+	border-radius: $_radius;
+	color: white;
+	cursor: pointer;
+	line-height: $_lineHeight;
+	font-size: $_fontSize;
+	padding: $_gutterS;
+	border: none;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+
+	&:hover {
+		background-color: $_whiteSemiOpaque;
+	}
+
+	&:active {
+		background-color: $_whiteAlmostOpaque;
+	}
+
+}
