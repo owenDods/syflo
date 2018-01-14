@@ -1,31 +1,66 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import TextInput from '../textInput/TextInput';
 
 export const className = 'datepicker';
+export const initialState = {
+	day: null,
+	month: null,
+	year: null
+};
 
-const Datepicker = () => {
+class Datepicker extends Component {
 
-	return (
+	constructor(props) {
 
-		<div className={className}>
+		super(props);
 
-			<div className={`${className}__inputs`}>
+		this.state = initialState;
 
-				<TextInput placeholder="DD" maxLength={2} />
+	}
 
-				<TextInput placeholder="MM" maxLength={2} />
+	handleDateChange = timeUnit => (e) => {
 
-				<TextInput placeholder="YYYY" maxLength={4} />
+		const { value } = e.target;
+
+		this.setState({ [timeUnit]: value });
+
+	}
+
+	isValidDate() {
+
+		const { day, month, year } = this.state;
+
+		return day && month && year;
+
+	}
+
+	render() {
+
+		const validDate = this.isValidDate();
+
+		return (
+
+			<div className={className}>
+
+				<div className={`${className}__inputs`}>
+
+					<TextInput placeholder="DD" maxLength={2} onChange={this.handleDateChange('day')} />
+
+					<TextInput placeholder="MM" maxLength={2} onChange={this.handleDateChange('month')} />
+
+					<TextInput placeholder="YYYY" maxLength={4} onChange={this.handleDateChange('year')} />
+
+				</div>
+
+				<button type="button" disabled={!validDate}>Submit</button>
 
 			</div>
 
-			<button type="button">Submit</button>
+		);
 
-		</div>
+	}
 
-	);
-
-};
+}
 
 export default Datepicker;
