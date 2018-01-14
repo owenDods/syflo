@@ -4,11 +4,11 @@ import map from 'lodash/map';
 
 export const className = 'selectionChoice';
 
-const SelectionChoice = ({ label, options, name, onClick }) => {
+const SelectionChoice = ({ label, options, name, onClick, component: Component }) => {
 
-	const choiceContent = map(options, (option, i) => (
+	const choiceContent = Component ? <Component /> : map(options, (option, i) => (
 
-		<div key={`${className}-${name}-${i}`} onClick={() => onClick(option)}>
+		<div key={`${className}-${name}-${i}`} onClick={() => onClick(option)} className={`${className}__choice`}>
 
 			<span>{option}</span>
 
@@ -42,7 +42,11 @@ SelectionChoice.propTypes = {
 	label: PropTypes.string,
 	options: PropTypes.arrayOf(PropTypes.string),
 	name: PropTypes.string,
-	onClick: PropTypes.func.isRequired
+	onClick: PropTypes.func.isRequired,
+	component: PropTypes.oneOfType([
+		PropTypes.element,
+		PropTypes.func
+	])
 };
 
 export default SelectionChoice;

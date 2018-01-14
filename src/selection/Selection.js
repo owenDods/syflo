@@ -40,6 +40,7 @@ class Selection extends Component {
 				options={options[selectionIndex].choices}
 				name={name}
 				onClick={this.handleChoiceSelect}
+				component={options[selectionIndex].component}
 			/>
 
 		) : null;

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
 
+import Datepicker from '../datepicker/Datepicker';
 import SelectionContainer from '../selection/SelectionContainer';
 
 export const className = 'content';
@@ -14,8 +15,8 @@ const Content = ({ titleSplashVisible }) => {
 			choices: [ 'Male', 'Female' ]
 		},
 		{
-			label: 'What is your sex????',
-			choices: [ 'Bloke', 'Chick' ]
+			label: 'What is your date of birth?',
+			component: Datepicker
 		}
 	];
 	const initialSelection = (

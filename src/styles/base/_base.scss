@@ -11,3 +11,11 @@ body {
 body {
 	background: radial-gradient(ellipse at bottom, $_darkBlue 0%, $_black 100%);
 }
+
+input {
+	border: none;
+	line-height: $_lineHeight;
+	font-size: $_fontSize;
+	width: 100%;
+	padding: $_gutterS;
+}
