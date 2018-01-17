@@ -33,12 +33,20 @@ button {
 	outline: none;
 	font-family: 'Quicksand', sans-serif;
 
-	&:hover {
-		background-color: $_whiteSemiOpaque;
+	&:not(:disabled) {
+
+		&:hover {
+			background-color: $_whiteSemiOpaque;
+		}
+
+		&:active {
+			background-color: $_whiteAlmostOpaque;
+		}
+
 	}
 
-	&:active {
-		background-color: $_whiteAlmostOpaque;
+	&:disabled {
+		@include disabled();
 	}
 
 }
