@@ -45,11 +45,26 @@ class Datepicker extends Component {
 
 				<div className={`${className}__inputs`}>
 
-					<TextInput placeholder="DD" maxLength={2} onChange={this.handleDateChange('day')} />
+					<TextInput
+						label="DD"
+						maxLength={2}
+						onChange={this.handleDateChange('day')}
+						number
+					/>
 
-					<TextInput placeholder="MM" maxLength={2} onChange={this.handleDateChange('month')} />
+					<TextInput
+						label="MM"
+						maxLength={2}
+						onChange={this.handleDateChange('month')}
+						number
+					/>
 
-					<TextInput placeholder="YYYY" maxLength={4} onChange={this.handleDateChange('year')} />
+					<TextInput
+						label="YYYY"
+						maxLength={4}
+						onChange={this.handleDateChange('year')}
+						number
+					/>
 
 				</div>
 

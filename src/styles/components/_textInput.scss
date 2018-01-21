@@ -1,6 +1,17 @@
 .textInput {
+
 	background-color: $_whiteAlmostTransparent;
 	border-radius: $_radius;
 	padding: $_gutterS;
 	display: flex;
+	flex-direction: column;
+
+	& > label {
+		padding: 0 0 $_gutterS 0;
+	}
+
+	& > input {
+		box-sizing: border-box;
+	}
+
 }

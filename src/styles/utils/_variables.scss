@@ -1,12 +1,20 @@
 $_black: #090a0f;
 $_darkGrey: #111111;
+$_white: #ffffff;
+
 $_darkBlue: #1b2735;
 $_lightBlue: #81cce4;
+
+$_blackAlmostTransparent: rgba(0, 0, 0, 0.25);
+$_blackSemiOpaque: rgba(0, 0, 0, 0.5);
+$_blackAlmostOpaque: rgba(0, 0, 0, 0.75);
 
 $_whiteAlmostTransparent: rgba(255, 255, 255, 0.25);
 $_whiteSemiOpaque: rgba(255, 255, 255, 0.5);
 $_whiteAlmostOpaque: rgba(255, 255, 255, 0.75);
 
+$_fontSizeXs: 1vmin;
+$_fontSizeS: 2vmin;
 $_fontSize: 3vmin;
 $_fontSizeL: 2rem;
 $_fontSizeXl: 3rem;

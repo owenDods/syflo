@@ -3,11 +3,18 @@ import PropTypes from 'prop-types';
 
 export const className = 'textInput';
 
-const TextInput = ({ placeholder, maxLength, onChange }) => (
+const TextInput = ({ label, placeholder, maxLength, onChange, number }) => (
 
 	<div className={className}>
 
-		<input type="text" placeholder={placeholder} maxLength={maxLength} onChange={onChange} />
+		<label>{label}</label>
+
+		<input
+			type={number ? 'number' : 'text'}
+			maxLength={maxLength}
+			placeholder={placeholder}
+			onChange={onChange}
+		/>
 
 	</div>
 
@@ -16,7 +23,8 @@ const TextInput = ({ placeholder, maxLength, onChange }) => (
 TextInput.propTypes = {
 	placeholder: PropTypes.string,
 	maxLength: PropTypes.number,
-	onChange: PropTypes.func
+	onChange: PropTypes.func,
+	number: PropTypes.bool
 };
 
 export default TextInput;
