@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import TextInput from '../textInput/TextInput';
 
 export const className = 'datepicker';
 export const initialState = {
-	day: null,
-	month: null,
-	year: null
+	day: '',
+	month: '',
+	year: ''
 };
 
 class Datepicker extends Component {
@@ -19,11 +20,11 @@ class Datepicker extends Component {
 
 	}
 
-	handleDateChange = timeUnit => (e) => {
+	handleDateChange = (timeUnit, maxLength) => (e) => {
 
-		const { value } = e.target;
+		const { value = '' } = e.target;
 
-		this.setState({ [timeUnit]: value });
+		this.setState({ [timeUnit]: value.slice(0, maxLength) });
 
 	}
 
@@ -38,6 +39,7 @@ class Datepicker extends Component {
 	render() {
 
 		const validDate = this.isValidDate();
+		const { day, month, year } = this.state;
 
 		return (
 
@@ -48,27 +50,36 @@ class Datepicker extends Component {
 					<TextInput
 						label="DD"
 						maxLength={2}
-						onChange={this.handleDateChange('day')}
+						onChange={this.handleDateChange('day', 2)}
+						value={day}
 						number
 					/>
 
 					<TextInput
 						label="MM"
 						maxLength={2}
-						onChange={this.handleDateChange('month')}
+						onChange={this.handleDateChange('month', 2)}
+						value={month}
 						number
 					/>
 
 					<TextInput
 						label="YYYY"
 						maxLength={4}
-						onChange={this.handleDateChange('year')}
+						onChange={this.handleDateChange('year', 4)}
+						value={year}
 						number
 					/>
 
 				</div>
 
-				<button type="button" disabled={!validDate}>Submit</button>
+				<button
+					type="button"
+					disabled={!validDate}
+					onClick={() => this.props.updateChoice(this.state)}
+				>
+					Submit
+				</button>
 
 			</div>
 
@@ -77,5 +88,9 @@ class Datepicker extends Component {
 	}
 
 }
+
+Datepicker.propTypes = {
+	updateChoice: PropTypes.func
+};
 
 export default Datepicker;
