@@ -39,7 +39,7 @@ class Selection extends Component {
 				label={options[selectionIndex].label}
 				options={options[selectionIndex].choices}
 				name={name}
-				onClick={this.handleChoiceSelect}
+				updateChoice={this.handleChoiceSelect}
 				component={options[selectionIndex].component}
 			/>
 

@@ -21,6 +21,7 @@ const TextInput = ({ label, placeholder, maxLength, onChange, number }) => (
 );
 
 TextInput.propTypes = {
+	label: PropTypes.string,
 	placeholder: PropTypes.string,
 	maxLength: PropTypes.number,
 	onChange: PropTypes.func,
