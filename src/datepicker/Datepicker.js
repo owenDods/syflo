@@ -55,6 +55,7 @@ class Datepicker extends Component {
 
 		const validDate = this.isValidDate();
 		const { day, month, year } = this.state;
+		const age = validDate ? moment().diff(moment(this.getStandardDateString(), 'DD-MM-YYYY', true), 'years') : '';
 
 		return (
 
@@ -91,7 +92,11 @@ class Datepicker extends Component {
 					disabled={!validDate}
 					onClick={() => this.props.updateChoice(this.getStandardDateString())}
 				>
-					Submit
+
+					<span>Submit</span>
+
+					<span className={`${className}__ageText`}>({age || '--'} years old)</span>
+
 				</button>
 
 			</div>
