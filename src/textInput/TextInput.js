@@ -17,7 +17,12 @@ class TextInput extends Component {
 
 	render() {
 
-		const { label, placeholder, maxLength, onChange, number, value } = this.props;
+		const { label, placeholder, maxLength, onChange, value } = this.props;
+		const inputRef = (el) => {
+
+			this.input = el;
+
+		};
 
 		return (
 
@@ -26,12 +31,12 @@ class TextInput extends Component {
 				<label>{label}</label>
 
 				<input
-					type={number ? 'number' : 'text'}
+					type="text"
 					maxLength={maxLength}
 					placeholder={placeholder}
 					onChange={onChange}
 					value={value}
-					ref={el => this.input = el}
+					ref={inputRef}
 				/>
 
 			</div>
@@ -47,7 +52,6 @@ TextInput.propTypes = {
 	placeholder: PropTypes.string,
 	maxLength: PropTypes.number,
 	onChange: PropTypes.func,
-	number: PropTypes.bool,
 	value: PropTypes.string,
 	focus: PropTypes.bool
 };

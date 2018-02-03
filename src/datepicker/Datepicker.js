@@ -24,7 +24,11 @@ class Datepicker extends Component {
 
 		const { value = '' } = e.target;
 
-		this.setState({ [timeUnit]: value.slice(0, maxLength) });
+		if (/^\d+$/.test(value) || (value.length === 0)) {
+
+			this.setState({ [timeUnit]: value.slice(0, maxLength) });
+
+		}
 
 	}
 
@@ -52,7 +56,6 @@ class Datepicker extends Component {
 						maxLength={2}
 						onChange={this.handleDateChange('day', 2)}
 						value={day}
-						number
 						focus
 					/>
 
@@ -61,7 +64,6 @@ class Datepicker extends Component {
 						maxLength={2}
 						onChange={this.handleDateChange('month', 2)}
 						value={month}
-						number
 					/>
 
 					<TextInput
@@ -69,7 +71,6 @@ class Datepicker extends Component {
 						maxLength={4}
 						onChange={this.handleDateChange('year', 4)}
 						value={year}
-						number
 					/>
 
 				</div>
