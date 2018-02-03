@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+export const initialState = {
+	focus: false
+};
 export const className = 'textInput';
 
 class TextInput extends Component {
+
+	constructor(props) {
+
+		super(props);
+
+		this.state = initialState;
+
+	}
 
 	componentDidMount() {
 
@@ -18,15 +29,17 @@ class TextInput extends Component {
 	render() {
 
 		const { label, placeholder, maxLength, onChange, value } = this.props;
+		const { focus } = this.state;
 		const inputRef = (el) => {
 
 			this.input = el;
 
 		};
+		const styleClass = focus ? `${className} ${className}--focus` : className;
 
 		return (
 
-			<div className={className}>
+			<div className={styleClass}>
 
 				<label>{label}</label>
 
@@ -37,6 +50,8 @@ class TextInput extends Component {
 					onChange={onChange}
 					value={value}
 					ref={inputRef}
+					onFocus={() => this.setState({ focus: true })}
+					onBlur={() => this.setState({ focus: false })}
 				/>
 
 			</div>
