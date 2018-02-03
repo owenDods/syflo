@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 import TextInput from '../textInput/TextInput';
 
@@ -20,6 +21,16 @@ class Datepicker extends Component {
 
 	}
 
+	getStandardDateString() {
+
+		const { day, month, year } = this.state;
+		const standardisedDay = day.length === 1 ? `0${day}` : day;
+		const standardisedMonth = month.length === 1 ? `0${month}` : month;
+
+		return `${standardisedDay}-${standardisedMonth}-${year}`;
+
+	}
+
 	handleDateChange = (timeUnit, maxLength) => (e) => {
 
 		const { value = '' } = e.target;
@@ -34,9 +45,9 @@ class Datepicker extends Component {
 
 	isValidDate() {
 
-		const { day, month, year } = this.state;
+		const date = moment(this.getStandardDateString(), 'DD-MM-YYYY', true);
 
-		return day && month && year;
+		return date.isValid();
 
 	}
 
@@ -78,7 +89,7 @@ class Datepicker extends Component {
 				<button
 					type="button"
 					disabled={!validDate}
-					onClick={() => this.props.updateChoice(this.state)}
+					onClick={() => this.props.updateChoice(this.getStandardDateString())}
 				>
 					Submit
 				</button>
