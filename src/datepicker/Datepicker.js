@@ -53,6 +53,7 @@ class Datepicker extends Component {
 						onChange={this.handleDateChange('day', 2)}
 						value={day}
 						number
+						focus
 					/>
 
 					<TextInput

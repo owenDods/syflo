@@ -1,25 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export const className = 'textInput';
 
-const TextInput = ({ label, placeholder, maxLength, onChange, number, value }) => (
+class TextInput extends Component {
 
-	<div className={className}>
+	componentDidMount() {
 
-		<label>{label}</label>
+		if (this.props.focus) {
 
-		<input
-			type={number ? 'number' : 'text'}
-			maxLength={maxLength}
-			placeholder={placeholder}
-			onChange={onChange}
-			value={value}
-		/>
+			this.input.focus();
 
-	</div>
+		}
 
-);
+	}
+
+	render() {
+
+		const { label, placeholder, maxLength, onChange, number, value } = this.props;
+
+		return (
+
+			<div className={className}>
+
+				<label>{label}</label>
+
+				<input
+					type={number ? 'number' : 'text'}
+					maxLength={maxLength}
+					placeholder={placeholder}
+					onChange={onChange}
+					value={value}
+					ref={el => this.input = el}
+				/>
+
+			</div>
+
+		);
+
+	}
+
+}
 
 TextInput.propTypes = {
 	label: PropTypes.string,
@@ -27,7 +48,8 @@ TextInput.propTypes = {
 	maxLength: PropTypes.number,
 	onChange: PropTypes.func,
 	number: PropTypes.bool,
-	value: PropTypes.string
+	value: PropTypes.string,
+	focus: PropTypes.bool
 };
 
 export default TextInput;
