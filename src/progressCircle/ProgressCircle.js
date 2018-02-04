@@ -67,7 +67,7 @@ class ProgressCircle extends Component {
 
 	render() {
 
-		const { labelNumber, label } = this.props;
+		const { label } = this.props;
 		const { applyAngles, leftAngle, rightAngle } = this.state;
 		const { transitionTime } = config;
 		const styleClass = applyAngles ? `${className} ${className}--angles` : className;
@@ -77,9 +77,11 @@ class ProgressCircle extends Component {
 
 			<CountUp
 				start={0}
-				end={labelNumber}
+				end={(this.getPercentage() * 100)}
 				duration={0.3}
+				decimals={2}
 				className={`${className}__counter`}
+				suffix="%"
 			/>
 
 		);
@@ -134,8 +136,7 @@ ProgressCircle.propTypes = {
 	delayed: PropTypes.bool,
 	total: PropTypes.number,
 	portion: PropTypes.number,
-	label: PropTypes.string,
-	labelNumber: PropTypes.number
+	label: PropTypes.string
 };
 
 export default ProgressCircle;

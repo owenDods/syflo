@@ -25,8 +25,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 				delayed
 				total={yearsLeftFloat + age}
 				portion={age}
-				labelNumber={yearsLeftFloat}
-				label="years of your life remaining"
+				label="of your life has been lived"
 			/>
 
 		</div>
