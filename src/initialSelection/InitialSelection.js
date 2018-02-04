@@ -2,6 +2,7 @@ import React from 'react';
 
 import Datepicker from '../datepicker/Datepicker';
 import SelectionContainer from '../selection/SelectionContainer';
+import InitialSelectionResult from './InitialSelectionResult';
 
 export const options = [
 	{
@@ -16,7 +17,7 @@ export const options = [
 
 const InitialSelection = () => (
 
-	<SelectionContainer name="initial" options={options} />
+	<SelectionContainer name="initial" options={options} result={InitialSelectionResult} />
 
 );
 

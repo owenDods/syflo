@@ -21,8 +21,6 @@ class Selection extends Component {
 
 	handleChoiceSelect = (option) => {
 
-		console.log(option);
-
 		const { selectionIndex, selectionUpdateChoiceIndex, selectionUpdateChoice } = this.props;
 
 		selectionUpdateChoiceIndex(selectionIndex + 1);
@@ -33,7 +31,7 @@ class Selection extends Component {
 
 	render() {
 
-		const { options = [], name, selectionIndex } = this.props;
+		const { options = [], name, selectionIndex, result: Result, selectionChoices } = this.props;
 		const choicesContent = options.length && selectionIndex < options.length ? (
 
 			<SelectionChoice
@@ -45,7 +43,7 @@ class Selection extends Component {
 				component={options[selectionIndex].component}
 			/>
 
-		) : null;
+		) : <Result selectionChoices={selectionChoices} />;
 		const { transitionTime } = config;
 
 		return (
@@ -82,7 +80,12 @@ Selection.propTypes = {
 	selectionIndex: PropTypes.number,
 	selectionUpdateChoiceIndex: PropTypes.func,
 	selectionUpdateChoiceCount: PropTypes.func.isRequired,
-	selectionUpdateChoice: PropTypes.func.isRequired
+	selectionUpdateChoice: PropTypes.func.isRequired,
+	result: PropTypes.oneOfType([
+		PropTypes.element,
+		PropTypes.func
+	]),
+	selectionChoices: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Selection;

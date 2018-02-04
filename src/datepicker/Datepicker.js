@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import TextInput from '../textInput/TextInput';
+import getAge from '../utils/getAge';
 
 export const className = 'datepicker';
 export const initialState = {
@@ -55,7 +56,7 @@ class Datepicker extends Component {
 
 		const validDate = this.isValidDate();
 		const { day, month, year } = this.state;
-		const age = validDate ? moment().diff(moment(this.getStandardDateString(), 'DD-MM-YYYY', true), 'years') : '';
+		const age = validDate ? getAge(this.getStandardDateString()) : '';
 
 		return (
 
