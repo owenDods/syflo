@@ -19,10 +19,12 @@
 	}
 
 	&__innerLeft,
-	&__innerRight {
+	&__innerLeftBackground,
+	&__innerRight,
+	&__innerRightBackground {
 		width: 100%;
 		height: 100%;
-		border: 5px solid $_lightBlue;
+		border: 5px solid $_whiteAlmostTransparent;
 		box-sizing: border-box;
 		border-radius: 100%;
 		position: absolute;
@@ -31,27 +33,48 @@
 		transform: rotate(-180deg);
 	}
 
-	&__innerLeft {
+	&__innerLeft,
+	&__innerLeftBackground {
 		transition: transform $_transitionTime linear $_transitionTime;
 	}
 
-	&__innerRight {
+	&__innerLeft {
+		border-color: $_lightBlue;
+	}
+
+	&__innerRight,
+	&__innerRightBackground {
 		transition: transform $_transitionTime linear;
 	}
 
+	&__innerRight {
+		border-color: $_lightBlue;
+	}
+
 	&__left,
-	&__innerLeft {
+	&__innerLeft,
+	&__innerLeftBackground {
 		clip-path: inset(0 50% 0 0);
 	}
 
 	&__right,
-	&__innerRight {
+	&__innerRight,
+	&__innerRightBackground {
 		clip-path: inset(0 0 0 50%);
 	}
 
 	&__counter {
 		margin: auto;
 		font-size: $_fontSizeXxxl;
+	}
+
+	&--angles .progressCircle {
+
+		&__innerLeftBackground,
+		&__innerRightBackground {
+			transform: rotate(0deg);
+		}
+
 	}
 
 }

@@ -68,6 +68,7 @@ class ProgressCircle extends Component {
 
 		const { portion } = this.props;
 		const { applyAngles, leftAngle, rightAngle } = this.state;
+		const styleClass = applyAngles ? `${className} ${className}--angles` : className;
 		const leftStyle = applyAngles ? { transform: `rotate(${leftAngle}deg)` } : null;
 		const rightStyle = applyAngles ? { transform: `rotate(${rightAngle}deg)` } : null;
 		const counter = (
@@ -83,17 +84,21 @@ class ProgressCircle extends Component {
 
 		return (
 
-			<div className={className}>
+			<div className={styleClass}>
 
 				<div className={`${className}__left`}>
 
 					<div className={`${className}__innerLeft`} style={leftStyle} />
+
+					<div className={`${className}__innerLeftBackground`} />
 
 				</div>
 
 				<div className={`${className}__right`}>
 
 					<div className={`${className}__innerRight`} style={rightStyle} />
+
+					<div className={`${className}__innerRightBackground`} />
 
 				</div>
 
