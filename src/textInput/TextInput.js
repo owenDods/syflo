@@ -43,7 +43,7 @@ class TextInput extends Component {
 
 		return (
 
-			<div className={styleClass}>
+			<div className={styleClass} onClick={() => this.input.focus()}>
 
 				<label>{label}</label>
 
