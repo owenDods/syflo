@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import CountUp from 'react-countup';
 
 import config from '../config';
 
@@ -65,9 +66,20 @@ class ProgressCircle extends Component {
 
 	render() {
 
+		const { portion } = this.props;
 		const { applyAngles, leftAngle, rightAngle } = this.state;
 		const leftStyle = applyAngles ? { transform: `rotate(${leftAngle}deg)` } : null;
 		const rightStyle = applyAngles ? { transform: `rotate(${rightAngle}deg)` } : null;
+		const counter = (
+
+			<CountUp
+				start={0}
+				end={portion}
+				duration={0.3}
+				className={`${className}__counter`}
+			/>
+
+		);
 
 		return (
 
@@ -84,6 +96,8 @@ class ProgressCircle extends Component {
 					<div className={`${className}__innerRight`} style={rightStyle} />
 
 				</div>
+
+				{applyAngles ? counter : null}
 
 			</div>
 

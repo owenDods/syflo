@@ -1,11 +1,12 @@
 .progressCircle {
 
-	width: 500px;
-	height: 500px;
+	width: 80vmin;
+	height: 80vmin;
 	border-radius: 100%;
 	overflow: hidden;
 	margin: auto;
 	position: relative;
+	display: flex;
 
 	&__left,
 	&__right {
@@ -46,6 +47,11 @@
 	&__right,
 	&__innerRight {
 		clip-path: inset(0 0 0 50%);
+	}
+
+	&__counter {
+		margin: auto;
+		font-size: $_fontSizeXxxl;
 	}
 
 }
