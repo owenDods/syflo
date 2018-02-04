@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
+import {
+	BrowserRouter as Router,
+	Route
+} from 'react-router-dom';
 
-import Datepicker from '../datepicker/Datepicker';
-import SelectionContainer from '../selection/SelectionContainer';
+import InitialSelection from '../initialSelection/InitialSelection';
 
 import config from '../config';
 
@@ -11,50 +14,44 @@ export const className = 'content';
 
 const Content = ({ titleSplashVisible }) => {
 
-	const options = [
-		{
-			label: 'What is your sex?',
-			choices: [ 'Male', 'Female' ]
-		},
-		{
-			label: 'What is your date of birth?',
-			component: Datepicker
-		}
-	];
-	const initialSelection = (
+	const routes = (
 
-		<SelectionContainer name="initial" options={options} />
+		<Route exact path="/" component={InitialSelection} />
 
 	);
 	const { transitionTime } = config;
 
 	return (
 
-		<div className={className}>
+		<Router>
 
-			<CSSTransitionGroup
-				className={`${className}__splashTitle`}
-				transitionName={`${className}__splashTitle`}
-				transitionEnterTimeout={transitionTime}
-				transitionLeaveTimeout={transitionTime}
-			>
+			<div className={className}>
 
-				{titleSplashVisible ? (<h1>SYFLO</h1>) : null}
+				<CSSTransitionGroup
+					className={`${className}__splashTitle`}
+					transitionName={`${className}__splashTitle`}
+					transitionEnterTimeout={transitionTime}
+					transitionLeaveTimeout={transitionTime}
+				>
 
-			</CSSTransitionGroup>
+					{titleSplashVisible ? (<h1>SYFLO</h1>) : null}
 
-			<CSSTransitionGroup
-				className={`${className}__body`}
-				transitionName={`${className}__body`}
-				transitionEnterTimeout={(transitionTime * 2)}
-				transitionLeaveTimeout={transitionTime}
-			>
+				</CSSTransitionGroup>
 
-				{titleSplashVisible ? null : initialSelection}
+				<CSSTransitionGroup
+					className={`${className}__body`}
+					transitionName={`${className}__body`}
+					transitionEnterTimeout={(transitionTime * 2)}
+					transitionLeaveTimeout={transitionTime}
+				>
 
-			</CSSTransitionGroup>
+					{titleSplashVisible ? null : routes}
 
-		</div>
+				</CSSTransitionGroup>
+
+			</div>
+
+		</Router>
 
 	);
 
