@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import config from '../config';
+
 export const initialState = {
 	focus: false
 };
@@ -18,9 +20,11 @@ class TextInput extends Component {
 
 	componentDidMount() {
 
-		if (this.props.focus) {
+		if (this.props.delayedFocus) {
 
-			this.input.focus();
+			const { transitionTime } = config;
+
+			setTimeout(() => this.input.focus(), transitionTime);
 
 		}
 
@@ -68,7 +72,7 @@ TextInput.propTypes = {
 	maxLength: PropTypes.number,
 	onChange: PropTypes.func,
 	value: PropTypes.string,
-	focus: PropTypes.bool
+	delayedFocus: PropTypes.bool
 };
 
 export default TextInput;

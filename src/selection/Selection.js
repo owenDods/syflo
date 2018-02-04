@@ -5,6 +5,8 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import SelectionChoice from './SelectionChoice';
 import SelectionIndex from './SelectionIndex';
 
+import config from '../config';
+
 export const className = 'selection';
 
 class Selection extends Component {
@@ -44,6 +46,7 @@ class Selection extends Component {
 			/>
 
 		) : null;
+		const { transitionTime } = config;
 
 		return (
 
@@ -54,8 +57,8 @@ class Selection extends Component {
 				<CSSTransitionGroup
 					className={`${className}__body`}
 					transitionName={`${className}__body`}
-					transitionEnterTimeout={600}
-					transitionLeaveTimeout={300}
+					transitionEnterTimeout={(transitionTime * 2)}
+					transitionLeaveTimeout={transitionTime}
 				>
 
 					{choicesContent}

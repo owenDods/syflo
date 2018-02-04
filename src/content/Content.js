@@ -5,6 +5,8 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import Datepicker from '../datepicker/Datepicker';
 import SelectionContainer from '../selection/SelectionContainer';
 
+import config from '../config';
+
 export const className = 'content';
 
 const Content = ({ titleSplashVisible }) => {
@@ -24,6 +26,7 @@ const Content = ({ titleSplashVisible }) => {
 		<SelectionContainer name="initial" options={options} />
 
 	);
+	const { transitionTime } = config;
 
 	return (
 
@@ -32,8 +35,8 @@ const Content = ({ titleSplashVisible }) => {
 			<CSSTransitionGroup
 				className={`${className}__splashTitle`}
 				transitionName={`${className}__splashTitle`}
-				transitionEnterTimeout={300}
-				transitionLeaveTimeout={300}
+				transitionEnterTimeout={transitionTime}
+				transitionLeaveTimeout={transitionTime}
 			>
 
 				{titleSplashVisible ? (<h1>SYFLO</h1>) : null}
@@ -43,8 +46,8 @@ const Content = ({ titleSplashVisible }) => {
 			<CSSTransitionGroup
 				className={`${className}__body`}
 				transitionName={`${className}__body`}
-				transitionEnterTimeout={600}
-				transitionLeaveTimeout={300}
+				transitionEnterTimeout={(transitionTime * 2)}
+				transitionLeaveTimeout={transitionTime}
 			>
 
 				{titleSplashVisible ? null : initialSelection}

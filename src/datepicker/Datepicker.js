@@ -68,7 +68,7 @@ class Datepicker extends Component {
 						maxLength={2}
 						onChange={this.handleDateChange('day', 2)}
 						value={day}
-						focus
+						delayedFocus
 					/>
 
 					<TextInput
