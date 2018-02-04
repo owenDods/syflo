@@ -32,7 +32,8 @@ class Selection extends Component {
 	render() {
 
 		const { options = [], name, selectionIndex, result: Result, selectionChoices } = this.props;
-		const choicesContent = options.length && selectionIndex < options.length ? (
+		const showOption = options.length && selectionIndex < options.length;
+		const choicesContent = showOption ? (
 
 			<SelectionChoice
 				key={`${selectionIndex}`}
@@ -45,10 +46,11 @@ class Selection extends Component {
 
 		) : (<Result selectionChoices={selectionChoices} key={`${selectionIndex}`} />);
 		const { transitionTime } = config;
+		const styleClass = !showOption ? `${className} ${className}--results` : className;
 
 		return (
 
-			<div className={className}>
+			<div className={styleClass}>
 
 				<SelectionIndex name={name} optionsLength={options.length} index={selectionIndex} />
 
