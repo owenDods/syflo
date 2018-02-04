@@ -1,0 +1,24 @@
+.progressCircle {
+
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	background-color: white;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+
+	&__fill {
+		position: absolute;
+		bottom: 0;
+		background-color: blue;
+		width: 100%;
+		height: 0;
+		@include transitionAll();
+	}
+
+	&--complete .progressCircle__fill {
+		height: 100%;
+	}
+
+}

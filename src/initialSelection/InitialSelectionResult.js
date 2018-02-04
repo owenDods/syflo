@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import ProgressCircle from '../progressCircle/ProgressCircle';
+
 import getAge from '../utils/getAge';
 
 import config from '../config';
@@ -16,7 +18,11 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 
 	return (
 
-		<div className={className} />
+		<div className={className}>
+
+			<ProgressCircle delayed />
+
+		</div>
 
 	);
 

@@ -35,7 +35,7 @@ class Selection extends Component {
 		const choicesContent = options.length && selectionIndex < options.length ? (
 
 			<SelectionChoice
-				key={`${className}-${name}-${selectionIndex}`}
+				key={`${selectionIndex}`}
 				label={options[selectionIndex].label}
 				options={options[selectionIndex].choices}
 				name={name}
@@ -43,7 +43,7 @@ class Selection extends Component {
 				component={options[selectionIndex].component}
 			/>
 
-		) : <Result selectionChoices={selectionChoices} />;
+		) : (<Result selectionChoices={selectionChoices} key={`${selectionIndex}`} />);
 		const { transitionTime } = config;
 
 		return (
