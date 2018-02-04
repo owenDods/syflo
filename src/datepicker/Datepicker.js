@@ -52,6 +52,16 @@ class Datepicker extends Component {
 
 	}
 
+	handleKeyPress = (e) => {
+
+		if (e.key === 'Enter' && this.isValidDate()) {
+
+			this.props.updateChoice(this.getStandardDateString());
+
+		}
+
+	}
+
 	render() {
 
 		const validDate = this.isValidDate();
@@ -60,7 +70,7 @@ class Datepicker extends Component {
 
 		return (
 
-			<div className={className}>
+			<div className={className} onKeyPress={this.handleKeyPress}>
 
 				<div className={`${className}__inputs`}>
 
