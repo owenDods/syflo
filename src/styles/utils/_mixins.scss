@@ -7,17 +7,17 @@
 }
 
 @mixin transitionOpacity() {
-	transition: opacity 0.3s ease-in-out;
+	transition: opacity $_transitionTime ease-in-out;
 }
 
-@mixin transitionAll($duration: 0.3s, $delay: 0s) {
+@mixin transitionAll($duration: $_transitionTime, $delay: 0s) {
 	transition: all $duration ease-in-out $delay;
 }
 
 @mixin enterLeaveClasses() {
 
 	&-enter {
-		@include transitionAll(0.3s, 0.3s);
+		@include transitionAll($_transitionTime, $_transitionTime);
 		opacity: 0;
 		transform: scale(0.5);
 	}
@@ -28,7 +28,7 @@
 	}
 
 	&-leave {
-		@include transitionAll(0.3s, 0s);
+		@include transitionAll($_transitionTime, 0s);
 		opacity: 1;
 		transform: scale(1);
 	}

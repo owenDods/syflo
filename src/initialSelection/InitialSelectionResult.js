@@ -13,14 +13,14 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 
 	const { ageData } = config;
 	const age = getAge(selectionChoices[1]);
-
-	console.log(selectionChoices, ageData, ageData[age][selectionChoices[0].toLowerCase()]);
+	const ageStats = ageData[age][selectionChoices[0].toLowerCase()];
+	const { yearsLeft } = ageStats;
 
 	return (
 
 		<div className={className}>
 
-			<ProgressCircle delayed />
+			<ProgressCircle delayed total={parseFloat(yearsLeft) + age} portion={age} />
 
 		</div>
 

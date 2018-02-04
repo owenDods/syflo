@@ -3,22 +3,49 @@
 	width: 500px;
 	height: 500px;
 	border-radius: 100%;
-	background-color: white;
 	overflow: hidden;
 	margin: auto;
 	position: relative;
 
-	&__fill {
-		position: absolute;
-		bottom: 0;
-		background-color: blue;
+	&__left,
+	&__right {
 		width: 100%;
-		height: 0;
-		@include transitionAll();
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		overflow: hidden;
 	}
 
-	&--complete .progressCircle__fill {
+	&__innerLeft,
+	&__innerRight {
+		width: 100%;
 		height: 100%;
+		border: 5px solid $_lightBlue;
+		box-sizing: border-box;
+		border-radius: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		transform: rotate(-180deg);
+	}
+
+	&__innerLeft {
+		transition: transform $_transitionTime linear $_transitionTime;
+	}
+
+	&__innerRight {
+		transition: transform $_transitionTime linear;
+	}
+
+	&__left,
+	&__innerLeft {
+		clip-path: inset(0 50% 0 0);
+	}
+
+	&__right,
+	&__innerRight {
+		clip-path: inset(0 0 0 50%);
 	}
 
 }
