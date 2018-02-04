@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CountUp from 'react-countup';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import config from '../config';
 
@@ -66,8 +67,9 @@ class ProgressCircle extends Component {
 
 	render() {
 
-		const { portion } = this.props;
+		const { labelNumber, label } = this.props;
 		const { applyAngles, leftAngle, rightAngle } = this.state;
+		const { transitionTime } = config;
 		const styleClass = applyAngles ? `${className} ${className}--angles` : className;
 		const leftStyle = applyAngles ? { transform: `rotate(${leftAngle}deg)` } : null;
 		const rightStyle = applyAngles ? { transform: `rotate(${rightAngle}deg)` } : null;
@@ -75,10 +77,15 @@ class ProgressCircle extends Component {
 
 			<CountUp
 				start={0}
-				end={portion}
+				end={labelNumber}
 				duration={0.3}
 				className={`${className}__counter`}
 			/>
+
+		);
+		const labelContent = (
+
+			<label key={0}>{label}</label>
 
 		);
 
@@ -104,6 +111,17 @@ class ProgressCircle extends Component {
 
 				{applyAngles ? counter : null}
 
+				<CSSTransitionGroup
+					className={`${className}__label`}
+					transitionName={`${className}__label`}
+					transitionEnterTimeout={transitionTime}
+					transitionLeaveTimeout={transitionTime}
+				>
+
+					{applyAngles ? labelContent : null}
+
+				</CSSTransitionGroup>
+
 			</div>
 
 		);
@@ -115,7 +133,9 @@ class ProgressCircle extends Component {
 ProgressCircle.propTypes = {
 	delayed: PropTypes.bool,
 	total: PropTypes.number,
-	portion: PropTypes.number
+	portion: PropTypes.number,
+	label: PropTypes.string,
+	labelNumber: PropTypes.number
 };
 
 export default ProgressCircle;

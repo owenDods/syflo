@@ -7,6 +7,7 @@
 	margin: auto;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 
 	&__left,
 	&__right {
@@ -64,8 +65,20 @@
 	}
 
 	&__counter {
-		margin: auto;
+		margin: auto auto 0;
 		font-size: $_fontSizeXxxl;
+	}
+
+	&__label {
+
+		display: inline-block;
+		margin: $_gutter auto auto;
+		@include enterLeaveClasses(0s);
+
+		& > label {
+			display: inline-block;
+		}
+
 	}
 
 	&--angles .progressCircle {

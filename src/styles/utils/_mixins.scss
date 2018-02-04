@@ -14,10 +14,10 @@
 	transition: all $duration ease-in-out $delay;
 }
 
-@mixin enterLeaveClasses() {
+@mixin enterLeaveClasses($delay: $_transitionTime) {
 
 	&-enter {
-		@include transitionAll($_transitionTime, $_transitionTime);
+		@include transitionAll($_transitionTime, $delay);
 		opacity: 0;
 		transform: scale(0.5);
 	}

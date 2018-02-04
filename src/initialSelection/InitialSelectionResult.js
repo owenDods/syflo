@@ -15,12 +15,19 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 	const age = getAge(selectionChoices[1]);
 	const ageStats = ageData[age][selectionChoices[0].toLowerCase()];
 	const { yearsLeft } = ageStats;
+	const yearsLeftFloat = parseFloat(yearsLeft);
 
 	return (
 
 		<div className={className}>
 
-			<ProgressCircle delayed total={parseFloat(yearsLeft) + age} portion={age} />
+			<ProgressCircle
+				delayed
+				total={yearsLeftFloat + age}
+				portion={age}
+				labelNumber={yearsLeftFloat}
+				label="years of your life remaining"
+			/>
 
 		</div>
 
