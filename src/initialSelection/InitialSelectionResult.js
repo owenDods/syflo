@@ -13,10 +13,12 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 
 	const { ageData } = config;
 	const age = getAge(selectionChoices[1]);
-	const ageDataSegment = ageData[Math.min(age, (ageData.length - 1))];
+	const maxAge = ageData.length - 1;
+	const ageDataSegment = ageData[Math.min(age, maxAge)];
 	const ageStats = ageDataSegment[selectionChoices[0].toLowerCase()];
 	const { yearsLeft } = ageStats;
 	const yearsLeftFloat = parseFloat(yearsLeft);
+	const subLabelText = `(Based on data for the maximum age of ${maxAge})`;
 
 	return (
 
@@ -27,6 +29,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 				total={yearsLeftFloat + age}
 				portion={age}
 				label="of your life has been lived"
+				subLabel={(age > maxAge) ? subLabelText : ''}
 			/>
 
 		</div>

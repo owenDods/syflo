@@ -75,8 +75,22 @@
 		margin: $_gutter auto auto;
 		@include enterLeaveClasses(0s);
 
-		& > label {
-			display: inline-block;
+		& > div {
+
+			display: flex;
+			flex-direction: column;
+
+			& > label {
+
+				display: inline-block;
+				text-align: center;
+
+				& + label {
+					font-size: $_fontSizeS;
+				}
+
+			}
+
 		}
 
 	}

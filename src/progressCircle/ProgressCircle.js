@@ -67,7 +67,7 @@ class ProgressCircle extends Component {
 
 	render() {
 
-		const { label } = this.props;
+		const { label, subLabel } = this.props;
 		const { applyAngles, leftAngle, rightAngle } = this.state;
 		const { transitionTime } = config;
 		const styleClass = applyAngles ? `${className} ${className}--angles` : className;
@@ -87,7 +87,13 @@ class ProgressCircle extends Component {
 		);
 		const labelContent = (
 
-			<label key={0}>{label}</label>
+			<div key={0}>
+
+				<label>{label}</label>
+
+				{subLabel ? (<label>{subLabel}</label>) : null}
+
+			</div>
 
 		);
 
@@ -136,7 +142,8 @@ ProgressCircle.propTypes = {
 	delayed: PropTypes.bool,
 	total: PropTypes.number,
 	portion: PropTypes.number,
-	label: PropTypes.string
+	label: PropTypes.string,
+	subLabel: PropTypes.string
 };
 
 export default ProgressCircle;
