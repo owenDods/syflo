@@ -13,7 +13,8 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 
 	const { ageData } = config;
 	const age = getAge(selectionChoices[1]);
-	const ageStats = ageData[age][selectionChoices[0].toLowerCase()];
+	const ageDataSegment = ageData[Math.min(age, (ageData.length - 1))];
+	const ageStats = ageDataSegment[selectionChoices[0].toLowerCase()];
 	const { yearsLeft } = ageStats;
 	const yearsLeftFloat = parseFloat(yearsLeft);
 
