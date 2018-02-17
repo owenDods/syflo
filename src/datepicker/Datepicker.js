@@ -106,7 +106,7 @@ class Datepicker extends Component {
 
 					<span>Submit</span>
 
-					<span className={`${className}__ageText`}>({age || '--'} years old)</span>
+					<span className={`${className}__ageText`}>({(age || age === 0) ? age : '--'} years old)</span>
 
 				</button>
 
