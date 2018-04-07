@@ -1,0 +1,31 @@
+.progressGrid {
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	&__grid {
+		width: 100%;
+		height: 100%;
+		display: grid;
+		grid-template-columns: repeat(100, 1fr);
+	}
+
+	&__cell {
+		width: 50%;
+		height: 50%;
+		margin: auto;
+		background-color: $_whiteAlmostTransparent;
+		@include transition(background-color);
+	}
+
+	&--active .progressGrid__cell--active {
+		background-color: $_lightBlue;
+	}
+
+	&__label {
+		margin: $_gutter auto 0;
+	}
+
+}

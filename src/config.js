@@ -2,7 +2,8 @@ import data from '../ageData.json';
 
 const config = {
 	transitionTime: 300,
-	ageData: data
+	ageData: data,
+	weeksInAYear: 52
 };
 
 export default config;

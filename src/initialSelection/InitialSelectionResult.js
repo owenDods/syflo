@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import ProgressCircle from '../progressCircle/ProgressCircle';
+import ProgressGrid from '../progressGrid/ProgressGrid';
 
 import getAge from '../utils/getAge';
 
@@ -21,18 +21,19 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 	const yearsLeftFloat = parseFloat(yearsLeft);
 	const ageExceedsMax = age > maxAge;
 	const minAge = 0;
-	const subLabelText = ageExceedsMax ? `(Based on data for the maximum age of ${maxAge})` : `(Based on data for the minimum age of ${minAge})`;
+	const additionalText = ageExceedsMax ? ` (Based on data for the maximum age of ${maxAge})` : ` (Based on data for the minimum age of ${minAge})`;
+	const preLabel = 'You\'ve lived';
+	const postLabel = `weeks of your life${(ageExceedsMax || (age === minAge)) ? additionalText : ''}`;
 
 	return (
 
 		<div className={className}>
 
-			<ProgressCircle
-				delayed
+			<ProgressGrid
 				total={yearsLeftFloat + age}
-				portion={age}
-				label="of your life has been lived"
-				subLabel={ageExceedsMax || (age === minAge) ? subLabelText : ''}
+				count={age}
+				preLabel={preLabel}
+				postLabel={postLabel}
 			/>
 
 		</div>

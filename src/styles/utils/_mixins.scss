@@ -14,6 +14,10 @@
 	transition: all $duration ease-in-out $delay;
 }
 
+@mixin transition($property) {
+	transition: $property $_transitionTime ease-in-out;
+}
+
 @mixin enterLeaveClasses($delay: $_transitionTime) {
 
 	&-enter {
