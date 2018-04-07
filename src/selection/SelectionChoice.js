@@ -1,15 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import map from 'lodash/map';
 
 export const className = 'selectionChoice';
+export const initialState = {
+	choiceMade: false
+};
 
-const SelectionChoice = ({ label, options, name, updateChoice, component: Component }) => {
+class SelectionChoice extends Component {
 
-	const choiceContent = Component ? <Component updateChoice={updateChoice} /> :
-		map(options, (option, i) => (
+	constructor(props) {
 
-			<div key={`${className}-${name}-${i}`} onClick={() => updateChoice(option)} className={`${className}__choice`}>
+		super(props);
+
+		this.state = initialState;
+
+	}
+
+	handleChoiceSelection = option => () => {
+
+		const { updateChoice } = this.props;
+		const { choiceMade } = this.state;
+
+		if (!choiceMade) {
+
+			this.setState({ choiceMade: true }, () => updateChoice(option));
+
+		}
+
+	}
+
+	render() {
+
+		const { label, options, name, component: CustomComponent } = this.props;
+		const choiceContent = CustomComponent ? (
+
+			<CustomComponent updateChoice={this.handleChoiceSelection} />
+
+		) : map(options, (option, i) => (
+
+			<div key={`${className}-${name}-${i}`} onClick={this.handleChoiceSelection(option)} className={`${className}__choice`}>
 
 				<span>{option}</span>
 
@@ -17,27 +47,29 @@ const SelectionChoice = ({ label, options, name, updateChoice, component: Compon
 
 		));
 
-	return (
+		return (
 
-		<div className={className}>
+			<div className={className}>
 
-			<label>
+				<label>
 
-				<span>{label}</span>
+					<span>{label}</span>
 
-			</label>
+				</label>
 
-			<div className={`${className}__content`}>
+				<div className={`${className}__content`}>
 
-				{choiceContent}
+					{choiceContent}
+
+				</div>
 
 			</div>
 
-		</div>
+		);
 
-	);
+	}
 
-};
+}
 
 SelectionChoice.propTypes = {
 	label: PropTypes.string,

@@ -101,7 +101,7 @@ class Datepicker extends Component {
 				<button
 					type="button"
 					disabled={!validDate}
-					onClick={() => this.props.updateChoice(this.getStandardDateString())}
+					onClick={this.props.updateChoice(this.getStandardDateString())}
 				>
 
 					<span>Submit</span>
