@@ -7,6 +7,8 @@ export const className = 'progressGrid';
 export const initialState = {
 	active: false
 };
+export const defaultTotal = 100;
+export const defaultCount = 100;
 
 class ProgressGrid extends Component {
 
@@ -30,7 +32,9 @@ class ProgressGrid extends Component {
 
 	getLabel() {
 
-		const { total = 100, count = 100, preLabel, postLabel } = this.props;
+		const { preLabel, postLabel } = this.props;
+		const total = this.getTotal();
+		const count = this.getCount();
 		const { weeksInAYear } = config;
 
 		const weeksCount = count * weeksInAYear;
@@ -40,9 +44,26 @@ class ProgressGrid extends Component {
 
 	}
 
+	getTotal() {
+
+		const { total = defaultTotal } = this.props;
+
+		return Math.max(Math.min(total, defaultTotal), 0);
+
+	}
+
+	getCount() {
+
+		const { count = defaultCount } = this.props;
+
+		return Math.max(Math.min(count, defaultCount), 0);
+
+	}
+
 	render() {
 
-		const { total = 100, count = 100 } = this.props;
+		const total = this.getTotal();
+		const count = this.getCount();
 		const { active } = this.state;
 		const styleClass = active ? `${className} ${className}--active` : className;
 		const gridCells = [];
@@ -51,7 +72,7 @@ class ProgressGrid extends Component {
 
 		while (gridIterations < (total * weeksInAYear)) {
 
-			const isActive = gridIterations <= (count * weeksInAYear);
+			const isActive = gridIterations <= (count * weeksInAYear) && (count !== 0);
 			let cellClass = `${className}__cell`;
 			cellClass = isActive ? `${cellClass} ${cellClass}--active` : cellClass;
 			const style = isActive ? { transitionDelay: `${(0.0025 * gridIterations)}s` } : {};
