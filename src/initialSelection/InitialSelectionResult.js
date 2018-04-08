@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
+import map from 'lodash/map';
 
 import ProgressGrid from '../progressGrid/ProgressGrid';
 
@@ -8,6 +10,18 @@ import getAge from '../utils/getAge';
 import config from '../config';
 
 export const className = 'initialSelectionResult';
+
+const getLifeMilestonesInWeeks = (dateString) => {
+
+	const milestones = [ 1, 10, 18, 30, 50, 80 ];
+	const dob = moment(dateString, 'DD-MM-YYYY', true);
+
+	return map(milestones, milestone => ({
+		age: milestone,
+		weeks: moment(dob).add(milestone, 'years').diff(dob, 'weeks')
+	}));
+
+};
 
 const InitialSelectionResult = ({ selectionChoices }) => {
 
@@ -27,6 +41,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 	const postLabel = `weeks of your life${(ageExceedsMax || (age === minAge)) ? additionalText : ''}`;
 	const ageInWeeks = getAge(ageString, 'weeks');
 	const yearsLeftInWeeks = Math.floor(yearsLeftFloat * weeksInAYear);
+	const milestones = getLifeMilestonesInWeeks(ageString);
 
 	return (
 
@@ -37,6 +52,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 				count={ageInWeeks}
 				preLabel={preLabel}
 				postLabel={postLabel}
+				milestones={milestones}
 			/>
 
 		</div>

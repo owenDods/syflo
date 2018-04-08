@@ -13,11 +13,47 @@
 	}
 
 	&__cell {
+
 		width: 50%;
 		height: 50%;
 		margin: auto;
 		background-color: $_whiteAlmostTransparent;
 		@include transition(background-color);
+		position: relative;
+		box-sizing: border-box;
+
+		&--milestone {
+
+			border: 1px solid $_white;
+			z-index: $_zIndex1;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				bottom: 0;
+				margin: auto;
+				width: 200%;
+				height: 2px;
+				background-color: $_white;
+				transform: rotate(-45deg);
+				transform-origin: center left;
+			}
+
+		}
+
+		label {
+			position: absolute;
+			font-size: $_fontSizeS;
+			bottom: 100%;
+			left: 100%;
+			background-color: $_darkGrey;
+			border: 1px solid $_white;
+			padding: $_gutterXs;
+			white-space: nowrap;
+		}
+
 	}
 
 	&--active .progressGrid__cell--active {

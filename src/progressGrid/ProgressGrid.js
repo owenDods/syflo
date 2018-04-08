@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import find from 'lodash/find';
 
 import config from '../config';
 
@@ -57,6 +58,14 @@ class ProgressGrid extends Component {
 
 	}
 
+	findMilestone(iteration) {
+
+		const { milestones } = this.props;
+
+		return find(milestones, ({ weeks }) => weeks === iteration);
+
+	}
+
 	render() {
 
 		const total = this.getTotal();
@@ -70,11 +79,30 @@ class ProgressGrid extends Component {
 		while (gridIterations < total) {
 
 			const isActive = (gridIterations <= count) && (count !== 0);
-			let cellClass = `${className}__cell`;
-			cellClass = isActive ? `${cellClass} ${cellClass}--active` : cellClass;
 			const style = isActive ? { transitionDelay: `${(0.0025 * gridIterations)}s` } : {};
+			const milestone = this.findMilestone(gridIterations);
 
-			gridCells.push(<div key={`${className}-${gridIterations}`} className={cellClass} style={style} />);
+			const label = milestone ? (
+
+				<label>{milestone.age} year{milestone.age !== 1 ? 's' : ''}</label>
+
+			) : null;
+
+			const cellClass = `${className}__cell`;
+			let cellStyleClass = isActive ? `${cellClass} ${cellClass}--active` : cellClass;
+			cellStyleClass = milestone ? `${cellStyleClass} ${cellClass}--milestone` : cellStyleClass;
+			const cellEl = (
+
+				<div key={`${className}-${gridIterations}`} className={cellStyleClass} style={style}>
+
+					{label}
+
+				</div>
+
+			);
+
+
+			gridCells.push(cellEl);
 
 			gridIterations++;
 
@@ -104,7 +132,11 @@ ProgressGrid.propTypes = {
 	total: PropTypes.number,
 	count: PropTypes.number,
 	preLabel: PropTypes.string,
-	postLabel: PropTypes.string
+	postLabel: PropTypes.string,
+	milestones: PropTypes.arrayOf(PropTypes.shape({
+		age: PropTypes.number,
+		weeks: PropTypes.number
+	}))
 };
 
 export default ProgressGrid;
