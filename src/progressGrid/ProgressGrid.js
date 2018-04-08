@@ -84,7 +84,12 @@ class ProgressGrid extends Component {
 
 			const label = milestone ? (
 
-				<label>{milestone.age} year{milestone.age !== 1 ? 's' : ''}</label>
+				<label style={style}>{milestone.age} year{milestone.age !== 1 ? 's' : ''}</label>
+
+			) : null;
+			const labelLine = milestone ? (
+
+				<div className={`${className}__labelLine`} style={style} />
 
 			) : null;
 
@@ -94,6 +99,8 @@ class ProgressGrid extends Component {
 			const cellEl = (
 
 				<div key={`${className}-${gridIterations}`} className={cellStyleClass} style={style}>
+
+					{labelLine}
 
 					{label}
 

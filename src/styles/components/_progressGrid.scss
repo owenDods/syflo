@@ -18,29 +18,13 @@
 		height: 50%;
 		margin: auto;
 		background-color: $_whiteAlmostTransparent;
-		@include transition(background-color);
+		transition: background-color $_transitionTime ease-in-out, border-color $_transitionTime ease-in-out;
 		position: relative;
 		box-sizing: border-box;
 
 		&--milestone {
-
-			border: 1px solid $_white;
+			border: 1px solid transparent;
 			z-index: $_zIndex1;
-
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 50%;
-				bottom: 0;
-				margin: auto;
-				width: 200%;
-				height: 2px;
-				background-color: $_white;
-				transform: rotate(-45deg);
-				transform-origin: center left;
-			}
-
 		}
 
 		label {
@@ -52,12 +36,45 @@
 			border: 1px solid $_white;
 			padding: $_gutterXs;
 			white-space: nowrap;
+			opacity: 0;
+			transform: translate(-$_gutterXs, $_gutterXs);
+			transition: opacity $_transitionTime ease-in-out, transform $_transitionTime ease-in-out;
 		}
 
 	}
 
+	&__labelLine {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		margin: auto;
+		width: 200%;
+		height: 2px;
+		background-color: $_white;
+		transform: rotate(-45deg);
+		transform-origin: center left;
+		transition: opacity $_transitionTime ease-in-out;
+		opacity: 0;
+	}
+
 	&--active .progressGrid__cell--active {
+
 		background-color: $_lightBlue;
+
+		&.progressGrid__cell--milestone {
+			border-color: $_white;
+		}
+
+		.progressGrid__labelLine {
+			opacity: 1;
+		}
+
+		label {
+			opacity: 1;
+			transform: translate(0);
+		}
+
 	}
 
 	&__label {
