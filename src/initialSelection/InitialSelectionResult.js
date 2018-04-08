@@ -11,8 +11,9 @@ export const className = 'initialSelectionResult';
 
 const InitialSelectionResult = ({ selectionChoices }) => {
 
-	const { ageData } = config;
-	const age = getAge(selectionChoices[1]);
+	const { ageData, weeksInAYear } = config;
+	const ageString = selectionChoices[1];
+	const age = getAge(ageString);
 	const maxAge = ageData.length - 1;
 	const ageBroughtWithinRange = Math.min(age, maxAge);
 	const ageDataSegment = ageData[ageBroughtWithinRange];
@@ -24,14 +25,16 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 	const additionalText = ageExceedsMax ? ` (Based on data for the maximum age of ${maxAge})` : ` (Based on data for the minimum age of ${minAge})`;
 	const preLabel = 'You\'ve lived';
 	const postLabel = `weeks of your life${(ageExceedsMax || (age === minAge)) ? additionalText : ''}`;
+	const ageInWeeks = getAge(ageString, 'weeks');
+	const yearsLeftInWeeks = Math.floor(yearsLeftFloat * weeksInAYear);
 
 	return (
 
 		<div className={className}>
 
 			<ProgressGrid
-				total={yearsLeftFloat + age}
-				count={age}
+				total={yearsLeftInWeeks + ageInWeeks}
+				count={ageInWeeks}
 				preLabel={preLabel}
 				postLabel={postLabel}
 			/>
