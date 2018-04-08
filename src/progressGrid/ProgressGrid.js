@@ -76,7 +76,7 @@ class ProgressGrid extends Component {
 
 		let gridIterations = 0;
 
-		while (gridIterations < total) {
+		while (gridIterations <= total) {
 
 			const isActive = (gridIterations <= count) && (count !== 0);
 			const style = isActive ? { transitionDelay: `${(0.0025 * gridIterations)}s` } : {};
@@ -96,6 +96,8 @@ class ProgressGrid extends Component {
 			const cellClass = `${className}__cell`;
 			let cellStyleClass = isActive ? `${cellClass} ${cellClass}--active` : cellClass;
 			cellStyleClass = milestone ? `${cellStyleClass} ${cellClass}--milestone` : cellStyleClass;
+			cellStyleClass = (gridIterations === count) && (count !== 0) ? `${cellStyleClass} ${cellClass}--latest` : cellStyleClass;
+
 			const cellEl = (
 
 				<div key={`${className}-${gridIterations}`} className={cellStyleClass} style={style}>
