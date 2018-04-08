@@ -56,7 +56,7 @@ class Datepicker extends Component {
 
 		if (e.key === 'Enter' && this.isValidDate()) {
 
-			this.props.updateChoice(this.getStandardDateString());
+			this.props.updateChoice(this.getStandardDateString())();
 
 		}
 
