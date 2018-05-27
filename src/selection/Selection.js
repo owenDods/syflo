@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
 
@@ -31,7 +31,7 @@ class Selection extends Component {
 
 	render() {
 
-		const { options = [], name, selectionIndex, result: Result, selectionChoices } = this.props;
+		const { options = [], name, selectionIndex, result, selectionChoices } = this.props;
 		const showOption = options.length && selectionIndex < options.length;
 		const choicesContent = showOption ? (
 
@@ -44,7 +44,7 @@ class Selection extends Component {
 				component={options[selectionIndex].component}
 			/>
 
-		) : (<Result selectionChoices={selectionChoices} key={`${selectionIndex}`} />);
+		) : cloneElement(result, { selectionChoices, key: `${selectionIndex}` });
 		const { transitionTime } = config;
 		const styleClass = !showOption ? `${className} ${className}--results` : className;
 

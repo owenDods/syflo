@@ -6,17 +6,17 @@ import {
 	Route
 } from 'react-router-dom';
 
-import InitialSelection from '../initialSelection/InitialSelection';
+import InitialSelectionContainer from '../initialSelection/InitialSelectionContainer';
 
 import config from '../config';
 
 export const className = 'content';
 
-const Content = ({ titleSplashVisible }) => {
+const Content = ({ titleSplashVisible, initialSelectionComplete }) => {
 
 	const routes = (
 
-		<Route exact path="/" component={InitialSelection} />
+		<Route exact path="/" component={initialSelectionComplete ? null : InitialSelectionContainer} />
 
 	);
 	const { transitionTime } = config;
@@ -59,7 +59,8 @@ const Content = ({ titleSplashVisible }) => {
 };
 
 Content.propTypes = {
-	titleSplashVisible: PropTypes.bool
+	titleSplashVisible: PropTypes.bool,
+	initialSelectionComplete: PropTypes.bool
 };
 
 export default Content;

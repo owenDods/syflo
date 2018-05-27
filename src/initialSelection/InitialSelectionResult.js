@@ -23,7 +23,7 @@ const getLifeMilestonesInWeeks = (dateString) => {
 
 };
 
-const InitialSelectionResult = ({ selectionChoices }) => {
+const InitialSelectionResult = ({ selectionChoices, finish }) => {
 
 	const { ageData, weeksInAYear } = config;
 	const ageString = selectionChoices[1];
@@ -55,6 +55,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 				postLabel={postLabel}
 				milestones={milestones}
 				buttonLabel={buttonLabel}
+				onButtonClick={finish}
 			/>
 
 		</div>
@@ -64,7 +65,8 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 };
 
 InitialSelectionResult.propTypes = {
-	selectionChoices: PropTypes.arrayOf(PropTypes.string)
+	selectionChoices: PropTypes.arrayOf(PropTypes.string),
+	finish: PropTypes.func
 };
 
 export default InitialSelectionResult;

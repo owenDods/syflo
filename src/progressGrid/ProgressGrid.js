@@ -86,10 +86,14 @@ class ProgressGrid extends Component {
 
 	render() {
 
+		const { onButtonClick } = this.props;
+		const { active } = this.state;
+
 		const total = this.getTotal();
 		const count = this.getCount();
-		const { active } = this.state;
+
 		const styleClass = active ? `${className} ${className}--active` : className;
+
 		const gridCells = [];
 
 		let gridIterations = 0;
@@ -149,7 +153,7 @@ class ProgressGrid extends Component {
 
 					<label className={`${className}__label`}>{this.getLabel()}</label>
 
-					<button type="button" className={`${className}__button button--pulse`}>{this.getButtonLabel()}</button>
+					<button type="button" className={`${className}__button button--pulse`} onClick={onButtonClick}>{this.getButtonLabel()}</button>
 
 				</div>
 
@@ -170,7 +174,8 @@ ProgressGrid.propTypes = {
 		age: PropTypes.number,
 		weeks: PropTypes.number
 	})),
-	buttonLabel: PropTypes.string
+	buttonLabel: PropTypes.string,
+	onButtonClick: PropTypes.func
 };
 
 export default ProgressGrid;

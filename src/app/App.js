@@ -15,14 +15,17 @@ class App extends Component {
 
 	render() {
 
-		const { titleSplashVisible } = this.props;
+		const { titleSplashVisible, initialSelectionComplete } = this.props;
 		const styleClass = titleSplashVisible ? `${className} ${className}--splashVisible` : className;
 
 		return (
 
 			<div className={styleClass}>
 
-				<Content titleSplashVisible={titleSplashVisible} />
+				<Content
+					titleSplashVisible={titleSplashVisible}
+					initialSelectionComplete={initialSelectionComplete}
+				/>
 
 				<div className={`${className}__stars`} />
 
@@ -40,7 +43,8 @@ class App extends Component {
 
 App.propTypes = {
 	titleSplashVisible: PropTypes.bool,
-	appTitleSplashToggle: PropTypes.func.isRequired
+	appTitleSplashToggle: PropTypes.func.isRequired,
+	initialSelectionComplete: PropTypes.bool
 };
 
 export default App;

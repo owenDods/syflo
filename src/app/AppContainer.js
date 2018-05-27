@@ -6,10 +6,11 @@ import App from './App';
 const mapStateToProps = (state) => {
 
 	const { app } = state;
-	const { titleSplashVisible } = app;
+	const { titleSplashVisible, initialSelectionComplete } = app;
 
 	return {
-		titleSplashVisible
+		titleSplashVisible,
+		initialSelectionComplete
 	};
 
 };

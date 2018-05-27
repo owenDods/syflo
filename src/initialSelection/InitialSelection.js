@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Datepicker from '../datepicker/Datepicker';
 import SelectionContainer from '../selection/SelectionContainer';
@@ -15,10 +16,14 @@ export const options = [
 	}
 ];
 
-const InitialSelection = () => (
+const InitialSelection = ({ finishInitialSelection }) => (
 
-	<SelectionContainer name="initial" options={options} result={InitialSelectionResult} />
+	<SelectionContainer name="initial" options={options} result={(<InitialSelectionResult finish={finishInitialSelection} />)} />
 
 );
+
+InitialSelection.propTypes = {
+	finishInitialSelection: PropTypes.func
+};
 
 export default InitialSelection;
