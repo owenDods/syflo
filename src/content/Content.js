@@ -43,6 +43,7 @@ const Content = ({ titleSplashVisible }) => {
 					transitionName={`${className}__body`}
 					transitionEnterTimeout={(transitionTime * 2)}
 					transitionLeaveTimeout={transitionTime}
+					component="div"
 				>
 
 					{titleSplashVisible ? null : routes}

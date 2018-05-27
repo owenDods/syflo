@@ -48,3 +48,7 @@
 	opacity: 0.25;
 	cursor: default;
 }
+
+@mixin buttonPulse($duration: 1.5s) {
+	animation: buttonPulse $duration linear infinite;
+}

@@ -59,6 +59,7 @@ class Selection extends Component {
 					transitionName={`${className}__body`}
 					transitionEnterTimeout={(transitionTime * 2)}
 					transitionLeaveTimeout={transitionTime}
+					component="div"
 				>
 
 					{choicesContent}

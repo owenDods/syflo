@@ -42,6 +42,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 	const ageInWeeks = getAge(ageString, 'weeks');
 	const yearsLeftInWeeks = Math.floor(yearsLeftFloat * weeksInAYear);
 	const milestones = getLifeMilestonesInWeeks(ageString);
+	const buttonLabel = 'Do something with the remaining';
 
 	return (
 
@@ -53,6 +54,7 @@ const InitialSelectionResult = ({ selectionChoices }) => {
 				preLabel={preLabel}
 				postLabel={postLabel}
 				milestones={milestones}
+				buttonLabel={buttonLabel}
 			/>
 
 		</div>

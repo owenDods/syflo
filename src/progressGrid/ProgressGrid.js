@@ -42,6 +42,15 @@ class ProgressGrid extends Component {
 
 	}
 
+	getButtonLabel() {
+
+		const { buttonLabel } = this.props;
+		const remainder = this.getRemainder();
+
+		return `${buttonLabel} ${remainder}`;
+
+	}
+
 	getTotal() {
 
 		const { total = defaultTotal } = this.props;
@@ -55,6 +64,15 @@ class ProgressGrid extends Component {
 		const { count = defaultCount } = this.props;
 
 		return Math.max(Math.min(count, defaultCount), 0);
+
+	}
+
+	getRemainder() {
+
+		const total = this.getTotal();
+		const count = this.getCount();
+
+		return total - count;
 
 	}
 
@@ -127,7 +145,13 @@ class ProgressGrid extends Component {
 
 				</div>
 
-				<label className={`${className}__label`}>{this.getLabel()}</label>
+				<div className={`${className}__footer`}>
+
+					<label className={`${className}__label`}>{this.getLabel()}</label>
+
+					<button type="button" className={`${className}__button button--pulse`}>{this.getButtonLabel()}</button>
+
+				</div>
 
 			</div>
 
@@ -145,7 +169,8 @@ ProgressGrid.propTypes = {
 	milestones: PropTypes.arrayOf(PropTypes.shape({
 		age: PropTypes.number,
 		weeks: PropTypes.number
-	}))
+	})),
+	buttonLabel: PropTypes.string
 };
 
 export default ProgressGrid;

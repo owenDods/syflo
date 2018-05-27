@@ -1,0 +1,7 @@
+.button {
+
+	&--pulse:not(:hover):not(:active) {
+		@include buttonPulse();
+	}
+
+}

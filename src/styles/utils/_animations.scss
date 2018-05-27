@@ -25,3 +25,19 @@
 	}
 
 }
+
+@keyframes buttonPulse {
+
+	from {
+		background-color: $_whiteAlmostTransparent;
+	}
+
+	50% {
+		background-color: $_whiteSemiOpaque;
+	}
+
+	to {
+		background-color: $_whiteAlmostTransparent;
+	}
+
+}
