@@ -28,28 +28,33 @@ const selectionChoices = (state = initialState, action) => {
 
 				}
 
-				return Object.assign({}, state, { selectionChoices: newSelectionChoices });
+				return {
+					...state,
+					selectionChoices: newSelectionChoices
+				};
 
 			}
 
-			return Object.assign(state);
+			return state;
 
 		}
 
 		case SELECTION_UPDATE_CHOICE_INDEX:
 
-			return Object.assign({}, state, {
+			return {
+				...state,
 				selectionIndex: action.index
-			});
+			};
 
 		case SELECTION_UPDATE_CHOICE: {
 
 			const newSelectionChoices = state.selectionChoices.slice();
 			newSelectionChoices[action.index] = action.choice;
 
-			return Object.assign({}, state, {
+			return {
+				...state,
 				selectionChoices: newSelectionChoices
-			});
+			};
 
 		}
 
@@ -69,9 +74,10 @@ export default (state = {}, action) => {
 		case SELECTION_UPDATE_CHOICE_INDEX:
 		case SELECTION_UPDATE_CHOICE:
 
-			return Object.assign({}, state, {
+			return {
+				...state,
 				[action.name]: selectionChoices(state[action.name], action)
-			});
+			};
 
 		default:
 
