@@ -52,6 +52,7 @@ $selection-indexHeight: 20px;
 			border-radius: $_radius;
 			display: flex;
 			cursor: pointer;
+			text-align: center;
 
 			&:hover {
 				background-color: $_whiteSemiOpaque;
