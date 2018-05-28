@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import InitialSelectionContainer from '../initialSelection/InitialSelectionContainer';
+import TaskCreation from '../taskCreation/TaskCreation';
 
 import config from '../config';
 
@@ -16,7 +17,7 @@ const Content = ({ titleSplashVisible, initialSelectionComplete }) => {
 
 	const routes = (
 
-		<Route exact path="/" component={initialSelectionComplete ? null : InitialSelectionContainer} />
+		<Route exact path="/" component={initialSelectionComplete ? TaskCreation : InitialSelectionContainer} />
 
 	);
 	const { transitionTime } = config;

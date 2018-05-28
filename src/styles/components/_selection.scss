@@ -157,6 +157,11 @@ $selection-indexHeight: 20px;
 
 	}
 
+	&TextChoice {
+		display: flex;
+		margin: auto;
+	}
+
 	&--results .selection {
 
 		&__body {

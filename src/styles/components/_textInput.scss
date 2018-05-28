@@ -5,6 +5,7 @@
 	padding: $_gutterS;
 	display: flex;
 	flex-direction: column;
+	margin: auto;
 
 	&--focus {
 		background-color: $_whiteSemiOpaque;

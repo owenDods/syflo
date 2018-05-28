@@ -39,13 +39,14 @@ class TextInput extends Component {
 			this.input = el;
 
 		};
+		const labelContent = (<label>{label}</label>);
 		const styleClass = focus ? `${className} ${className}--focus` : className;
 
 		return (
 
 			<div className={styleClass} onClick={() => this.input.focus()}>
 
-				<label>{label}</label>
+				{label ? labelContent : null}
 
 				<input
 					type="text"
