@@ -158,8 +158,24 @@ $selection-indexHeight: 20px;
 	}
 
 	&TextChoice {
+
 		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
 		margin: auto;
+
+		& > button {
+			margin: auto auto 0;
+			width: 100%;
+			height: 50%;
+			font-size: 2rem;
+		}
+
+		.textInput {
+			width: 50%;
+		}
+
 	}
 
 	&--results .selection {

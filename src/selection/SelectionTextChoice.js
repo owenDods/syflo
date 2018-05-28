@@ -54,6 +54,16 @@ class SelectionTextChoice extends Component {
 
 				<TextInput value={value} onChange={this.handleTextChange} delayedFocus />
 
+				<button
+					type="button"
+					disabled={!this.isValidText()}
+					onClick={this.props.updateChoice(value)}
+				>
+
+					Submit
+
+				</button>
+
 			</div>
 
 		);

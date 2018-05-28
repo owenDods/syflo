@@ -12,7 +12,7 @@ export const options = [
 
 const TaskCreation = () => (
 
-	<SelectionContainer name="task" options={options} result={() => (<div className="woop" />)} />
+	<SelectionContainer name="task" options={options} result={(<SelectionTextChoice updateChoice={() => () => ''} />)} />
 
 );
 
